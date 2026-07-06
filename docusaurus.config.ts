@@ -89,6 +89,11 @@ const config: Config = {
           label: 'Developer Docs',
         },
         {
+          href: 'https://zerp.pk/pricing',
+          label: 'Pricing',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/zerp-pk/zerp',
           label: 'GitHub',
           position: 'right',
