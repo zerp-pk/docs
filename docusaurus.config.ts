@@ -68,7 +68,6 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Zerp Docs',
       logo: {
         alt: 'Zerp Logo',
         src: 'img/logo-light-mode.png',
