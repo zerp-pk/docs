@@ -13,12 +13,8 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // TODO: once docs.zerp.pk DNS is pointed at GitHub Pages, switch url to
-  // 'https://docs.zerp.pk' and baseUrl to '/' (restore static/CNAME too —
-  // see its .disabled copy). Until then this must match where GitHub Pages
-  // actually serves the project: zerp-pk.github.io/docs/.
-  url: 'https://zerp-pk.github.io',
-  baseUrl: '/docs/',
+  url: 'https://docs.zerp.pk',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'zerp-pk',
