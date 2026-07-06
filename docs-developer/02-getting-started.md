@@ -53,9 +53,14 @@ php artisan app:install --force
 php artisan storage:link
 ```
 
-This runs `migrate:fresh` (drops all tables) then seeds the database,
-registering every module found under `vendor/zerp/*` into the `add_ons`
-table via `PackageSeeder`. Only run it against a disposable database.
+This runs `migrate:fresh` (drops all tables) then prompts for a module
+preset — `Full Suite`, `HR Only`, `Sales & CRM`, or a `Custom selection`
+picker (see `config/module-presets.php` in the core app). Every module
+found under `vendor/zerp/*` still gets registered into the `add_ons`
+table via `PackageSeeder`, but only the ones you select are enabled and
+seeded with demo data. For non-interactive installs, pass
+`--preset=<name>` or `--modules=account,hrm,pos` instead of answering the
+prompt. Only run this against a disposable database.
 
 ## 4. Run it
 

@@ -37,6 +37,11 @@ docker compose exec app php artisan app:install --force
 docker compose exec app php artisan storage:link
 ```
 
+Add `-it` to the `exec` command (`docker compose exec -it app ...`) to get
+`app:install`'s interactive module picker; without a TTY it installs every
+module by default. Pass `--preset=<name>` or `--modules=account,hrm,pos`
+to choose modules non-interactively instead.
+
 ## CI
 
 `.github/workflows/ci.yml` runs on every push/PR to `main`. It's
@@ -58,12 +63,3 @@ Two smaller things worth knowing if you touch the workflow:
 - `npm install`, not `npm ci` — same reason, `npm ci` requires an existing
   lock file.
 
-## Known limitation
-
-`npm run build` fails if `vendor/zerp/*` module packages **are** present
-locally, due to a Vite/Rollup module-resolution issue with symlinked
-packages outside the project root (imports like `@inertiajs/react` from
-inside a symlinked module fail to resolve). This doesn't affect CI (which
-never has `vendor/zerp/*` populated) but is worth knowing if a local build
-fails after `composer install` pulls in modules — not yet fixed, tracked as
-a follow-up.

@@ -64,12 +64,17 @@ look for):
 the legacy in-repo `packages/local/*` path) for a `module.json` in each
 directory, and for every one it finds:
 
-1. Creates an `AddOn` row (module, price, priority) if one doesn't exist.
-2. Activates it for the seeded user via `UserActiveModule`.
-3. Runs `php artisan package:seed <ModuleName>` if the module defines one.
+1. Creates an `AddOn` row (module, price, priority) if one doesn't exist —
+   `is_enable` is set based on whether the module was selected during
+   `app:install` (see below); every discovered module gets a row either
+   way, enabled or not.
+2. If enabled: activates it for the seeded user via `UserActiveModule`.
+3. If enabled: runs `php artisan package:seed <ModuleName>` if the module
+   defines one.
 
-This runs automatically as part of `php artisan app:install` — see
-[Getting Started](./getting-started).
+This runs automatically as part of `php artisan app:install`, which
+prompts for which modules to enable (a preset bundle or a custom
+selection) — see [Getting Started](./getting-started).
 
 ## Cross-module integration: events, not direct calls
 
