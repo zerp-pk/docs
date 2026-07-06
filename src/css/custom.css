@@ -4,29 +4,29 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
+/* Zerp's brand color (the app's default "zawat" theme accent, #DA8F29). */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #da8f29;
+  --ifm-color-primary-dark: #c78323;
+  --ifm-color-primary-darker: #ba7a21;
+  --ifm-color-primary-darkest: #9c671c;
+  --ifm-color-primary-light: #dd9c40;
+  --ifm-color-primary-lighter: #e0a34d;
+  --ifm-color-primary-lightest: #e5b26c;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-navbar-height: 4.5rem;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Brighter variant for contrast on dark backgrounds. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #eba747;
+  --ifm-color-primary-dark: #e89c30;
+  --ifm-color-primary-darker: #e79523;
+  --ifm-color-primary-darkest: #cf8217;
+  --ifm-color-primary-light: #edb25e;
+  --ifm-color-primary-lighter: #efb86c;
+  --ifm-color-primary-lightest: #f2c88c;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
