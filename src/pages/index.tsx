@@ -40,7 +40,7 @@ function DocsCards() {
               <div className="card__footer">
                 <Link
                   className="button button--primary button--block"
-                  to="/docs/introduction">
+                  to="docs/introduction">
                   Read the User Docs
                 </Link>
               </div>
@@ -61,7 +61,7 @@ function DocsCards() {
               <div className="card__footer">
                 <Link
                   className="button button--primary button--block"
-                  to="/developer/introduction">
+                  to="developer/introduction">
                   Read the Developer Docs
                 </Link>
               </div>
