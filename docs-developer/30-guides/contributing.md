@@ -18,8 +18,8 @@ Quick pointers specific to working on the codebase:
   module's own repo, not the core app.
 - A change to auth, tenancy, billing, the Media Library, or the module
   loader belongs in the core app.
-- See [Getting Started](./getting-started) for local setup and
-  [Module Development](./module-development) before adding a new module or
+- See [Getting Started](../10-getting-started/getting-started.md) for local setup and
+  [Module Development](../20-architecture/module-development.md) before adding a new module or
   changing how modules integrate.
 
 This docs site itself ([zerp-pk/docs](https://github.com/zerp-pk/docs)) is

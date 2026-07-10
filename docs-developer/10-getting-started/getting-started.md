@@ -75,6 +75,6 @@ Visit `http://localhost:8000`, log in with the seeded super-admin
 ## Prefer Docker?
 
 `docker compose up -d --build` from the core app repo works the same way —
-see [Docker & CI](./docker-and-ci). The sibling `ZerpPackages/` checkout is
+see [Docker & CI](../30-guides/docker-and-ci.md). The sibling `ZerpPackages/` checkout is
 still required either way, since the Docker build context is the **parent**
 directory of `zerp/`.

@@ -74,7 +74,7 @@ directory, and for every one it finds:
 
 This runs automatically as part of `php artisan app:install`, which
 prompts for which modules to enable (a preset bundle or a custom
-selection) — see [Getting Started](./getting-started).
+selection) — see [Getting Started](../10-getting-started/getting-started.md).
 
 ## Cross-module integration: events, not direct calls
 
@@ -127,4 +127,7 @@ for roles/permissions, plus a plan/module-enable layer on top:
 Once a module works locally against its path repository, cut a tagged
 release so the core app (and anyone else) can depend on a real version
 instead of a local symlink — see
-[Publishing a Module Package](./publishing-a-package).
+[Publishing a Module Package](../30-guides/publishing-a-package.md).
+
+Every class in every module is catalogued in the
+[Package Reference](../50-reference/index.md).

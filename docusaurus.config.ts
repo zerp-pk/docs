@@ -103,7 +103,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {label: 'User Docs', to: 'docs/introduction'},
-            {label: 'Developer Docs', to: 'developer/introduction'},
+            {label: 'Developer Docs', to: 'developer/getting-started/introduction'},
           ],
         },
         {

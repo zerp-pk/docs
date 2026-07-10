@@ -50,7 +50,7 @@ release on Packagist/VCS — no path repository needed.
 | Feature modules | `zerp-pk/<module>` (e.g. `zerp-pk/product-service`, `zerp-pk/hrm`) |
 | This docs site | `zerp-pk/docs` |
 
-See [Getting Started](./getting-started) to set up all of the above locally,
-[Module Development](./module-development) for how a module is structured,
-and [The Media Library](./media-library) for the shared file-storage system
+See [Getting Started](./getting-started.md) to set up all of the above locally,
+[Module Development](../20-architecture/module-development.md) for how a module is structured,
+and [The Media Library](../20-architecture/media-library.md) for the shared file-storage system
 every module builds on.

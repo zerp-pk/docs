@@ -54,7 +54,7 @@ Why: this repo's `composer.json` path repositories point at a sibling
 `../ZerpPackages/*` directory that simply doesn't exist in an isolated
 GitHub Actions checkout of just this one repo. CI is scoped to what can
 actually run without it. If you need to test against real modules, do that
-locally (see [Getting Started](./getting-started)).
+locally (see [Getting Started](../10-getting-started/getting-started.md)).
 
 Two smaller things worth knowing if you touch the workflow:
 

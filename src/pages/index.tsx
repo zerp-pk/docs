@@ -61,7 +61,7 @@ function DocsCards() {
               <div className="card__footer">
                 <Link
                   className="button button--primary button--block"
-                  to="developer/introduction">
+                  to="developer/getting-started/introduction">
                   Read the Developer Docs
                 </Link>
               </div>
