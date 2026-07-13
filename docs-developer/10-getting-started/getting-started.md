@@ -72,6 +72,53 @@ npm run dev
 Visit `http://localhost:8000`, log in with the seeded super-admin
 (`company@example.com` / `1234`).
 
+## Module images are symlinks — know this before you debug them
+
+Each module ships its own images (favicon, and for the Landing Page module the
+hero/gallery/module art). They are **not copied** into `public/`. At module
+install time, `Module::publishAssets()` (`app/Classes/Module.php`) creates
+symlinks under `public/packages/local/<Module>/`:
+
+```
+public/packages/local/LandingPage/favicon.png            -> ../../../../vendor/zerp/landing-page/favicon.png
+public/packages/local/LandingPage/src/Resources/assets   -> ../../../../../../vendor/zerp/landing-page/src/Resources/assets
+```
+
+Those symlinks are **committed to the repo**, and `vendor/zerp/<pkg>` is itself
+a Composer path-repository symlink into your sibling `ZerpPackages/` checkout.
+So a working image URL depends on a two-hop symlink chain. Two consequences:
+
+- **Targets are relative on purpose.** They used to be absolute, which meant a
+  fresh clone inherited symlinks pointing at the original author's home
+  directory, and *every module image 404'd*. If you ever see links like
+  `/home/someone/...` in `public/packages`, your checkout predates the fix.
+- **A module you didn't clone leaves a dangling link.** That's harmless — only
+  that module's images 404.
+
+Images not loading? Check for dangling links first, then republish:
+
+```bash
+find public/packages -xtype l          # any output = broken links
+php artisan tinker --execute="
+  \$m = new \App\Classes\Module();
+  foreach (\App\Models\AddOn::pluck('module') as \$mod) { \$m->publishAssets(\$mod); }
+"
+find public/packages -xtype l          # should now print nothing
+```
+
+`publishAssets()` replaces links that are broken or absolute, so this is safe to
+re-run. Note it only runs on install, so nothing repairs these automatically.
+
+Two related traps:
+
+- `php artisan storage:link` covers `public/storage` (uploaded media, served via
+  `imageUrlPrefix`). That's a **separate** link from the ones above — having one
+  working tells you nothing about the other.
+- **On Windows**, git only materialises real symlinks with Developer Mode or an
+  elevated shell; otherwise it checks them out as small text files containing the
+  target path, and every module image 404s. Enable Developer Mode, set
+  `git config core.symlinks true`, and re-checkout.
+
 ## Prefer Docker?
 
 `docker compose up -d --build` from the core app repo works the same way —
