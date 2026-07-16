@@ -3,13 +3,13 @@ title: Contributing
 sidebar_position: 7
 ---
 
-Zerp is a multi-repo project — the core app and each module are separate
+Zerp is a multi-repo project - the core app and each module are separate
 repositories under [zerp-pk](https://github.com/orgs/zerp-pk/repositories).
 Full contribution guidelines, including which repo a given change belongs
 in, live in the core app:
 
 - [CONTRIBUTING.md](https://github.com/zerp-pk/zerp/blob/main/CONTRIBUTING.md)
-- [SECURITY.md](https://github.com/zerp-pk/zerp/blob/main/SECURITY.md) — how to report a vulnerability
+- [SECURITY.md](https://github.com/zerp-pk/zerp/blob/main/SECURITY.md) - how to report a vulnerability
 - [CODE_OF_CONDUCT.md](https://github.com/zerp-pk/zerp/blob/main/CODE_OF_CONDUCT.md)
 
 Quick pointers specific to working on the codebase:
@@ -23,5 +23,5 @@ Quick pointers specific to working on the codebase:
   changing how modules integrate.
 
 This docs site itself ([zerp-pk/docs](https://github.com/zerp-pk/docs)) is
-also open to PRs — fixes to unclear wording, missing steps, or outdated
+also open to PRs - fixes to unclear wording, missing steps, or outdated
 screenshots are always welcome.

@@ -15,17 +15,17 @@ Employee timesheet tracking module for the Zerp ERP platform
 
 ### `Timesheet`
 
-Eloquent model — 10 fillable fields, relations: user, project, task.
+Eloquent model - 10 fillable fields, relations: user, project, task.
 
 ### `TimesheetUtility`
 
-Eloquent model — 0 fillable fields.
+Eloquent model - 0 fillable fields.
 
 ## Controllers
 
 ### `TimesheetController`
 
-HTTP controller — actions: index, store, update, destroy, getAttendanceHours, fetchAttendanceHours, getRemainingHours.
+HTTP controller - actions: index, store, update, destroy, getAttendanceHours, fetchAttendanceHours, getRemainingHours.
 
 ## Events
 
@@ -51,11 +51,11 @@ Event listener.
 
 ### `StoreTimesheetRequest`
 
-Form request — validation rules for StoreTimesheet.
+Form request - validation rules for StoreTimesheet.
 
 ### `UpdateTimesheetRequest`
 
-Form request — validation rules for UpdateTimesheet.
+Form request - validation rules for UpdateTimesheet.
 
 ## Providers
 

@@ -34,5 +34,5 @@ The Performance Management module gives your organisation a structured way to me
 
 The Performance System Setup section allows administrators to configure the foundational data used in the Performance module. It includes two sections accessible from the left-side navigation panel: Indicator Categories and Goal Types.
 
--   **Indicator Categories** — Displays all indicator categories with their Name, Description, and Status. Click **“Create”** to open the Create Indicator Category form, where you enter the Name, an optional Description, and set the Status, then click Create. All entries can be Edited and Deleted using the action icons.
--   **Goal Types** — Displays all goal types with their Name, Description, and Status. Click **“Create”** to open the Create Goal Type form, where you enter the Name, an optional Description, and set the Status, then click Create. All entries can be Edited and Deleted using the action icons.
+-   **Indicator Categories** - Displays all indicator categories with their Name, Description, and Status. Click **“Create”** to open the Create Indicator Category form, where you enter the Name, an optional Description, and set the Status, then click Create. All entries can be Edited and Deleted using the action icons.
+-   **Goal Types** - Displays all goal types with their Name, Description, and Status. Click **“Create”** to open the Create Goal Type form, where you enter the Name, an optional Description, and set the Status, then click Create. All entries can be Edited and Deleted using the action icons.

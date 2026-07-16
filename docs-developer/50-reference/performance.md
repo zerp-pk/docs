@@ -15,57 +15,57 @@ Employee performance review module for the Zerp ERP platform
 
 ### `PerformanceEmployeeGoal`
 
-Eloquent model — 11 fillable fields, relations: employee, goalType, creator, createdBy.
+Eloquent model - 11 fillable fields, relations: employee, goalType, creator, createdBy.
 
 ### `PerformanceEmployeeReview`
 
-Eloquent model — 11 fillable fields, relations: user, reviewer, reviewCycle, creator, createdBy.
+Eloquent model - 11 fillable fields, relations: user, reviewer, reviewCycle, creator, createdBy.
 
 ### `PerformanceGoalType`
 
-Eloquent model — 5 fillable fields, relations: employeeGoals, creator, createdBy.
+Eloquent model - 5 fillable fields, relations: employeeGoals, creator, createdBy.
 
 ### `PerformanceIndicator`
 
-Eloquent model — 8 fillable fields, relations: category, creator, createdBy.
+Eloquent model - 8 fillable fields, relations: category, creator, createdBy.
 
 ### `PerformanceIndicatorCategory`
 
-Eloquent model — 5 fillable fields, relations: indicators, creator, createdBy.
+Eloquent model - 5 fillable fields, relations: indicators, creator, createdBy.
 
 ### `PerformanceReviewCycle`
 
-Eloquent model — 6 fillable fields, relations: employeeReviews, creator, createdBy.
+Eloquent model - 6 fillable fields, relations: employeeReviews, creator, createdBy.
 
 ### `PerformanceUtility`
 
-Eloquent model — 0 fillable fields.
+Eloquent model - 0 fillable fields.
 
 ## Controllers
 
 ### `EmployeeGoalController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `EmployeeReviewController`
 
-HTTP controller — actions: index, store, update, show, destroy, conduct, conductStore.
+HTTP controller - actions: index, store, update, show, destroy, conduct, conductStore.
 
 ### `GoalTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `PerformanceIndicatorCategoryController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `PerformanceIndicatorController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `ReviewCycleController`
 
-HTTP controller — actions: index, store, update, show, destroy.
+HTTP controller - actions: index, store, update, show, destroy.
 
 ## Events
 
@@ -151,107 +151,107 @@ Event listener.
 
 ### `StoreCompetencyCategoryRequest`
 
-Form request — validation rules for StoreCompetencyCategory.
+Form request - validation rules for StoreCompetencyCategory.
 
 ### `StoreCompetencyRequest`
 
-Form request — validation rules for StoreCompetency.
+Form request - validation rules for StoreCompetency.
 
 ### `StoreEmployeeCompetencyRequest`
 
-Form request — validation rules for StoreEmployeeCompetency.
+Form request - validation rules for StoreEmployeeCompetency.
 
 ### `StoreEmployeeFeedbackRequest`
 
-Form request — validation rules for StoreEmployeeFeedback.
+Form request - validation rules for StoreEmployeeFeedback.
 
 ### `StoreEmployeeGoalRequest`
 
-Form request — validation rules for StoreEmployeeGoal.
+Form request - validation rules for StoreEmployeeGoal.
 
 ### `StoreEmployeeReviewRequest`
 
-Form request — validation rules for StoreEmployeeReview.
+Form request - validation rules for StoreEmployeeReview.
 
 ### `StoreFeedbackTypeRequest`
 
-Form request — validation rules for StoreFeedbackType.
+Form request - validation rules for StoreFeedbackType.
 
 ### `StoreGoalTypeRequest`
 
-Form request — validation rules for StoreGoalType.
+Form request - validation rules for StoreGoalType.
 
 ### `StorePerformanceIndicatorCategoryRequest`
 
-Form request — validation rules for StorePerformanceIndicatorCategory.
+Form request - validation rules for StorePerformanceIndicatorCategory.
 
 ### `StorePerformanceIndicatorRequest`
 
-Form request — validation rules for StorePerformanceIndicator.
+Form request - validation rules for StorePerformanceIndicator.
 
 ### `StorePerformanceItemRequest`
 
-Form request — validation rules for StorePerformanceItem.
+Form request - validation rules for StorePerformanceItem.
 
 ### `StoreReviewCycleRequest`
 
-Form request — validation rules for StoreReviewCycle.
+Form request - validation rules for StoreReviewCycle.
 
 ### `StoreReviewTemplateRequest`
 
-Form request — validation rules for StoreReviewTemplate.
+Form request - validation rules for StoreReviewTemplate.
 
 ### `UpdateCompetencyCategoryRequest`
 
-Form request — validation rules for UpdateCompetencyCategory.
+Form request - validation rules for UpdateCompetencyCategory.
 
 ### `UpdateCompetencyRequest`
 
-Form request — validation rules for UpdateCompetency.
+Form request - validation rules for UpdateCompetency.
 
 ### `UpdateEmployeeCompetencyRequest`
 
-Form request — validation rules for UpdateEmployeeCompetency.
+Form request - validation rules for UpdateEmployeeCompetency.
 
 ### `UpdateEmployeeFeedbackRequest`
 
-Form request — validation rules for UpdateEmployeeFeedback.
+Form request - validation rules for UpdateEmployeeFeedback.
 
 ### `UpdateEmployeeGoalRequest`
 
-Form request — validation rules for UpdateEmployeeGoal.
+Form request - validation rules for UpdateEmployeeGoal.
 
 ### `UpdateEmployeeReviewRequest`
 
-Form request — validation rules for UpdateEmployeeReview.
+Form request - validation rules for UpdateEmployeeReview.
 
 ### `UpdateFeedbackTypeRequest`
 
-Form request — validation rules for UpdateFeedbackType.
+Form request - validation rules for UpdateFeedbackType.
 
 ### `UpdateGoalTypeRequest`
 
-Form request — validation rules for UpdateGoalType.
+Form request - validation rules for UpdateGoalType.
 
 ### `UpdatePerformanceIndicatorCategoryRequest`
 
-Form request — validation rules for UpdatePerformanceIndicatorCategory.
+Form request - validation rules for UpdatePerformanceIndicatorCategory.
 
 ### `UpdatePerformanceIndicatorRequest`
 
-Form request — validation rules for UpdatePerformanceIndicator.
+Form request - validation rules for UpdatePerformanceIndicator.
 
 ### `UpdatePerformanceItemRequest`
 
-Form request — validation rules for UpdatePerformanceItem.
+Form request - validation rules for UpdatePerformanceItem.
 
 ### `UpdateReviewCycleRequest`
 
-Form request — validation rules for UpdateReviewCycle.
+Form request - validation rules for UpdateReviewCycle.
 
 ### `UpdateReviewTemplateRequest`
 
-Form request — validation rules for UpdateReviewTemplate.
+Form request - validation rules for UpdateReviewTemplate.
 
 ## Providers
 

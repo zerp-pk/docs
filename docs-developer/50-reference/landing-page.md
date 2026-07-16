@@ -15,37 +15,37 @@ Landing page, CMS, and marketplace module for the Zerp ERP platform
 
 ### `CustomPage`
 
-Eloquent model — 7 fillable fields.
+Eloquent model - 7 fillable fields.
 
 ### `LandingPageSetting`
 
-Eloquent model — 5 fillable fields.
+Eloquent model - 5 fillable fields.
 
 ### `MarketplaceSetting`
 
-Eloquent model — 4 fillable fields.
+Eloquent model - 4 fillable fields.
 
 ### `NewsletterSubscriber`
 
-Eloquent model — 16 fillable fields.
+Eloquent model - 16 fillable fields.
 
 ## Controllers
 
 ### `CustomPageController`
 
-HTTP controller — actions: index, create, store, edit, update, destroy, show.
+HTTP controller - actions: index, create, store, edit, update, destroy, show.
 
 ### `LandingPageController`
 
-HTTP controller — actions: index, pricing, contact, submitContact, settings, store.
+HTTP controller - actions: index, pricing, contact, submitContact, settings, store.
 
 ### `MarketplaceController`
 
-HTTP controller — actions: index, settings, storeSettings.
+HTTP controller - actions: index, settings, storeSettings.
 
 ### `NewsletterSubscriberController`
 
-HTTP controller — actions: index, store, destroy, export.
+HTTP controller - actions: index, store, destroy, export.
 
 ## Events
 
@@ -61,11 +61,11 @@ Domain event.
 
 ### `StoreContactMessageRequest`
 
-Form request — validation rules for StoreContactMessage.
+Form request - validation rules for StoreContactMessage.
 
 ### `StoreNewsletterSubscriberRequest`
 
-Form request — validation rules for StoreNewsletterSubscriber.
+Form request - validation rules for StoreNewsletterSubscriber.
 
 ## Providers
 

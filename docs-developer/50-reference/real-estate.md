@@ -5,7 +5,7 @@ sidebar_position: 21
 
 # `zerp/real-estate`
 
-Real Estate Brokerage module for Zerp — property/listing management and viewings
+Real Estate Brokerage module for Zerp - property/listing management and viewings
 
 **Module version:** 1
 
@@ -15,59 +15,59 @@ Real Estate Brokerage module for Zerp — property/listing management and viewin
 
 ### `Amenity`
 
-Eloquent model — 2 fillable fields, relations: properties.
+Eloquent model - 2 fillable fields, relations: properties.
 
 ### `Property`
 
-Eloquent model — 24 fillable fields, relations: type, agent, amenities, images, viewings.
+Eloquent model - 24 fillable fields, relations: type, agent, amenities, images, viewings.
 
 ### `PropertyImage`
 
-Eloquent model — 5 fillable fields, relations: property, media.
+Eloquent model - 5 fillable fields, relations: property, media.
 
 ### `PropertyType`
 
-Eloquent model — 3 fillable fields, relations: properties.
+Eloquent model - 3 fillable fields, relations: properties.
 
 ### `PropertyViewing`
 
-Eloquent model — 8 fillable fields, relations: property, agent.
+Eloquent model - 8 fillable fields, relations: property, agent.
 
 ## Controllers
 
 ### `AmenityController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `DashboardController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `PropertyController`
 
-HTTP controller — actions: index, create, store, show, edit, update, destroy.
+HTTP controller - actions: index, create, store, show, edit, update, destroy.
 
 ### `PropertyTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `PropertyViewingController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ## Requests
 
 ### `StorePropertyRequest`
 
-Form request — validation rules for StoreProperty.
+Form request - validation rules for StoreProperty.
 
 ### `StorePropertyViewingRequest`
 
-Form request — validation rules for StorePropertyViewing.
+Form request - validation rules for StorePropertyViewing.
 
 ### `UpdatePropertyRequest`
 
-Form request — validation rules for UpdateProperty.
+Form request - validation rules for UpdateProperty.
 
 ## Providers
 

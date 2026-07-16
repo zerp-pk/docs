@@ -15,45 +15,45 @@ Financial goal tracking module for the Zerp ERP platform
 
 ### `Goal`
 
-Eloquent model — 13 fillable fields, relations: category, account, milestones, contributions, tracking.
+Eloquent model - 13 fillable fields, relations: category, account, milestones, contributions, tracking.
 
 ### `GoalCategory`
 
-Eloquent model — 6 fillable fields, relations: goals.
+Eloquent model - 6 fillable fields, relations: goals.
 
 ### `GoalContribution`
 
-Eloquent model — 9 fillable fields, relations: goal.
+Eloquent model - 9 fillable fields, relations: goal.
 
 ### `GoalMilestone`
 
-Eloquent model — 10 fillable fields, relations: goal.
+Eloquent model - 10 fillable fields, relations: goal.
 
 ### `GoalTracking`
 
-Eloquent model — 11 fillable fields, relations: goal.
+Eloquent model - 11 fillable fields, relations: goal.
 
 ## Controllers
 
 ### `GoalCategoryController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `GoalContributionController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `GoalController`
 
-HTTP controller — actions: index, store, update, show, active, destroy.
+HTTP controller - actions: index, store, update, show, active, destroy.
 
 ### `GoalMilestoneController`
 
-HTTP controller — actions: index, store, update, show, destroy.
+HTTP controller - actions: index, store, update, show, destroy.
 
 ### `GoalTrackingController`
 
-HTTP controller — actions: index, store, update, show, destroy.
+HTTP controller - actions: index, store, update, show, destroy.
 
 ## Events
 
@@ -127,43 +127,43 @@ Event listener.
 
 ### `StoreCategoryRequest`
 
-Form request — validation rules for StoreCategory.
+Form request - validation rules for StoreCategory.
 
 ### `StoreContributionRequest`
 
-Form request — validation rules for StoreContribution.
+Form request - validation rules for StoreContribution.
 
 ### `StoreGoalRequest`
 
-Form request — validation rules for StoreGoal.
+Form request - validation rules for StoreGoal.
 
 ### `StoreMilestoneRequest`
 
-Form request — validation rules for StoreMilestone.
+Form request - validation rules for StoreMilestone.
 
 ### `StoreTrackingRequest`
 
-Form request — validation rules for StoreTracking.
+Form request - validation rules for StoreTracking.
 
 ### `UpdateCategoryRequest`
 
-Form request — validation rules for UpdateCategory.
+Form request - validation rules for UpdateCategory.
 
 ### `UpdateContributionRequest`
 
-Form request — validation rules for UpdateContribution.
+Form request - validation rules for UpdateContribution.
 
 ### `UpdateGoalRequest`
 
-Form request — validation rules for UpdateGoal.
+Form request - validation rules for UpdateGoal.
 
 ### `UpdateMilestoneRequest`
 
-Form request — validation rules for UpdateMilestone.
+Form request - validation rules for UpdateMilestone.
 
 ### `UpdateTrackingRequest`
 
-Form request — validation rules for UpdateTracking.
+Form request - validation rules for UpdateTracking.
 
 ## Providers
 

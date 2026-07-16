@@ -30,7 +30,7 @@ The table displays the following columns:
 -   **Tax:** The tax amount applied to the invoice.
 -   **Total Amount:** The final amount, including tax.
 -   **Balance:** The remaining unpaid balance.
--   **Status:** The current status of the invoice — Draft, Posted, or Paid.
+-   **Status:** The current status of the invoice - Draft, Posted, or Paid.
 -   **Actions:** Quick action buttons that vary depending on the invoice status.
 
 Action icons available per invoice:
@@ -50,7 +50,7 @@ At the top right of the Sales Invoice Details section, select the invoice type:
 -   **Product-wise:** Use this when the invoice is for physical products.
 -   **Service Wise:** Use this when the invoice is for services rendered.
 
-##### Create Sales Invoice — Product Wise
+##### Create Sales Invoice - Product Wise
 
 ###### Sales Invoice Details:
 
@@ -82,7 +82,7 @@ At the top right of the Sales Invoice Details section, select the invoice type:
 -   **Tax:** Total tax applied.
 -   **Total:** Final payable amount.
 
-##### Create Sales Invoice — Service Wise
+##### Create Sales Invoice - Service Wise
 
 ###### Sales Invoice Details:
 
@@ -136,7 +136,7 @@ The table displays the following columns:
 -   **Return Date:** The date the return was created.
 -   **Total Amount:** The total value of the returned items.
 -   **Items:** The name of the returned product.
--   **Status:** The current status of the return — Draft, Approved, or Completed.
+-   **Status:** The current status of the return - Draft, Approved, or Completed.
 -   **Actions:** Quick action buttons that vary depending on the return status.
 
 Action icons available per return:

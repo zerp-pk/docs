@@ -15,21 +15,21 @@ Sales quotation module for the Zerp ERP platform
 
 ### `SalesQuotation`
 
-Eloquent model — 18 fillable fields, relations: customer, items, warehouse, customerDetails, parentQuotation, revisions.
+Eloquent model - 18 fillable fields, relations: customer, items, warehouse, customerDetails, parentQuotation, revisions.
 
 ### `SalesQuotationItem`
 
-Eloquent model — 11 fillable fields, relations: quotation, product, taxes.
+Eloquent model - 11 fillable fields, relations: quotation, product, taxes.
 
 ### `SalesQuotationItemTax`
 
-Eloquent model — 5 fillable fields, relations: item.
+Eloquent model - 5 fillable fields, relations: item.
 
 ## Controllers
 
 ### `QuotationController`
 
-HTTP controller — actions: index, create, store, show, edit, update, destroy, sent, approve, reject, print, createRevision, duplicate, convertToInvoice, getWarehouseProducts.
+HTTP controller - actions: index, create, store, show, edit, update, destroy, sent, approve, reject, print, createRevision, duplicate, convertToInvoice, getWarehouseProducts.
 
 ## Events
 
@@ -71,11 +71,11 @@ Event listener.
 
 ### `StoreQuotationRequest`
 
-Form request — validation rules for StoreQuotation.
+Form request - validation rules for StoreQuotation.
 
 ### `UpdateQuotationRequest`
 
-Form request — validation rules for UpdateQuotation.
+Form request - validation rules for UpdateQuotation.
 
 ## Providers
 

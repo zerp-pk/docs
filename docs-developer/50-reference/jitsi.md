@@ -15,17 +15,17 @@ Jitsi Meet integration module for the Zerp ERP platform
 
 ### `JitsiMeeting`
 
-Eloquent model — 12 fillable fields, relations: host.
+Eloquent model - 12 fillable fields, relations: host.
 
 ## Controllers
 
 ### `JitsiController`
 
-HTTP controller — actions: index, store, update, destroy, updateStatus.
+HTTP controller - actions: index, store, update, destroy, updateStatus.
 
 ### `JitsiSettingsController`
 
-HTTP controller — actions: update.
+HTTP controller - actions: update.
 
 ## Events
 
@@ -51,11 +51,11 @@ Event listener.
 
 ### `StoreJitsiMeetingRequest`
 
-Form request — validation rules for StoreJitsiMeeting.
+Form request - validation rules for StoreJitsiMeeting.
 
 ### `UpdateJitsiMeetingRequest`
 
-Form request — validation rules for UpdateJitsiMeeting.
+Form request - validation rules for UpdateJitsiMeeting.
 
 ## Providers
 

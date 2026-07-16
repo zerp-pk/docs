@@ -29,9 +29,9 @@ Auto-generated class reference for all `zerp/*` packages. Regenerate with `npm r
 | [zerp/pos](./pos) | Point of Sale module for the Zerp ERP platform | 14 |
 | [zerp/product-service](./product-service) | Product and service catalog module for the Zerp ERP platform | 37 |
 | [zerp/quotation](./quotation) | Sales quotation module for the Zerp ERP platform | 20 |
-| [zerp/real-estate](./real-estate) | Real Estate Brokerage module for Zerp — property/listing management and viewings | 22 |
+| [zerp/real-estate](./real-estate) | Real Estate Brokerage module for Zerp - property/listing management and viewings | 22 |
 | [zerp/recruitment](./recruitment) | Recruitment and hiring module for the Zerp ERP platform | 149 |
-| [zerp/restaurant](./restaurant) | Restaurant management module for Zerp — menu, orders and kitchen | 51 |
+| [zerp/restaurant](./restaurant) | Restaurant management module for Zerp - menu, orders and kitchen | 51 |
 | [zerp/slack](./slack) | Slack notification integration module for the Zerp ERP platform | 92 |
 | [zerp/stripe](./stripe) | Stripe payment gateway integration module for the Zerp ERP platform | 12 |
 | [zerp/support-ticket](./support-ticket) | Support ticket and helpdesk module for the Zerp ERP platform | 104 |

@@ -15,27 +15,27 @@ Description for example-package package
 
 ### `ExamplePackageItem`
 
-Eloquent model — 5 fillable fields.
+Eloquent model - 5 fillable fields.
 
 ## Controllers
 
 ### `DashboardController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `ExamplePackageItemController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ## Requests
 
 ### `StoreExamplePackageItemRequest`
 
-Form request — validation rules for StoreExamplePackageItem.
+Form request - validation rules for StoreExamplePackageItem.
 
 ### `UpdateExamplePackageItemRequest`
 
-Form request — validation rules for UpdateExamplePackageItem.
+Form request - validation rules for UpdateExamplePackageItem.
 
 ## Providers
 

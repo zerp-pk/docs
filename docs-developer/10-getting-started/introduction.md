@@ -5,7 +5,7 @@ sidebar_position: 1
 
 Zerp is a Laravel 12 + Inertia.js + React (TypeScript) ERP/SaaS platform. The
 [main app](https://github.com/zerp-pk/zerp) is a thin core (auth, tenancy,
-billing, the Media Library, module loader) — almost every business feature
+billing, the Media Library, module loader) - almost every business feature
 (HRM, CRM, Accounting, POS, Support Ticket, ...) ships as a separate,
 independently versioned Composer package under the
 [`zerp-pk`](https://github.com/orgs/zerp-pk/repositories) GitHub org.
@@ -40,7 +40,7 @@ directory (commonly checked out as `ZerpPackages/` next to `zerp/`):
 
 Composer symlinks each package into `vendor/zerp/<module>`. In production,
 the same `require` line instead resolves against the module's real tagged
-release on Packagist/VCS — no path repository needed.
+release on Packagist/VCS - no path repository needed.
 
 ## Where things live
 

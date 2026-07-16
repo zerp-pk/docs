@@ -9,7 +9,7 @@ other installs can depend on a real version.
 ## Version tags are immutable
 
 **Never re-tag a version that's already been published.** If `v1.0.1` is
-already out and you need to fix something in it, cut `v1.0.2` — don't
+already out and you need to fix something in it, cut `v1.0.2` - don't
 force-push over the existing tag. Anyone who already resolved `v1.0.1` (a
 lockfile, a deployed environment) would silently get different code under
 the same version number, which is exactly the class of bug semantic
@@ -26,7 +26,7 @@ git push origin v1.0.2
    are correct and `module.json` metadata (`name`, `alias`, `package_name`,
    pricing) matches what you want the core app to seed.
 2. Commit and push to the module's own repo (`zerp-pk/<module>`).
-3. Tag a new version (patch/minor/major per semver — a bug fix is a patch,
+3. Tag a new version (patch/minor/major per semver - a bug fix is a patch,
    a new feature is a minor, a breaking change to the module's public
    API/events is a major).
 4. If the core app's `composer.json` should track the new version instead

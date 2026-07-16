@@ -24,18 +24,18 @@ export function describe(info) {
   const top = info.kind.split('/').pop();
   if (top === 'Models') {
     const rel = info.relations.length ? `, relations: ${info.relations.join(', ')}` : '';
-    return `Eloquent model — ${info.fillable.length} fillable field${info.fillable.length === 1 ? '' : 's'}${rel}.`;
+    return `Eloquent model - ${info.fillable.length} fillable field${info.fillable.length === 1 ? '' : 's'}${rel}.`;
   }
   if (top.endsWith('Controllers') || info.kind.includes('Controllers')) {
-    return `HTTP controller — actions: ${info.methods.join(', ') || '—'}.`;
+    return `HTTP controller - actions: ${info.methods.join(', ') || 'none'}.`;
   }
-  if (top === 'Requests') return `Form request — validation rules for ${info.name.replace(/Request$/, '')}.`;
+  if (top === 'Requests') return `Form request - validation rules for ${info.name.replace(/Request$/, '')}.`;
   if (top === 'Events') return `Domain event.`;
   if (top === 'Listeners') return `Event listener.`;
   if (top === 'Seeders') return `Database seeder.`;
   if (top === 'Providers') return `Service provider.`;
   const ext = info.extends ? ` (extends ${info.extends})` : '';
-  return `${top} class${ext} — methods: ${info.methods.join(', ') || '—'}.`;
+  return `${top} class${ext} - methods: ${info.methods.join(', ') || 'none'}.`;
 }
 
 const HERE = dirname(fileURLToPath(import.meta.url));

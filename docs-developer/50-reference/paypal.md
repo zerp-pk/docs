@@ -15,11 +15,11 @@ PayPal payment gateway integration module for the Zerp ERP platform
 
 ### `PaypalController`
 
-HTTP controller — actions: planPayWithPaypal, planGetPaypalStatus, bookingPayWithPaypal, bookingGetPaypalStatus, beautySpaPayWithPaypal, beautySpaGetPaypalStatus, lmsPayWithPaypal, lmsGetPaypalStatus, parkingPayWithPaypal, parkingGetPaypalStatus, laundryPayWithPaypal, laundryGetPaypalStatus, eventsPayWithPaypal, eventsGetPaypalStatus.
+HTTP controller - actions: planPayWithPaypal, planGetPaypalStatus, bookingPayWithPaypal, bookingGetPaypalStatus, beautySpaPayWithPaypal, beautySpaGetPaypalStatus, lmsPayWithPaypal, lmsGetPaypalStatus, parkingPayWithPaypal, parkingGetPaypalStatus, laundryPayWithPaypal, laundryGetPaypalStatus, eventsPayWithPaypal, eventsGetPaypalStatus.
 
 ### `PaypalSettingsController`
 
-HTTP controller — actions: update.
+HTTP controller - actions: update.
 
 ## Events
 
@@ -43,7 +43,7 @@ Domain event.
 
 ### `UpdatePaypalSettingsRequest`
 
-Form request — validation rules for UpdatePaypalSettings.
+Form request - validation rules for UpdatePaypalSettings.
 
 ## Providers
 

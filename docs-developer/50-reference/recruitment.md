@@ -15,149 +15,149 @@ Recruitment and hiring module for the Zerp ERP platform
 
 ### `Candidate`
 
-Eloquent model — 34 fillable fields, relations: job_posting, candidate_source, profileMedia, resumeMedia, coverLetterMedia, interviews, candidateAssessments.
+Eloquent model - 34 fillable fields, relations: job_posting, candidate_source, profileMedia, resumeMedia, coverLetterMedia, interviews, candidateAssessments.
 
 ### `CandidateAssessment`
 
-Eloquent model — 10 fillable fields, relations: candidate, conductedBy.
+Eloquent model - 10 fillable fields, relations: candidate, conductedBy.
 
 ### `CandidateOnboarding`
 
-Eloquent model — 7 fillable fields, relations: candidate, checklist, buddy.
+Eloquent model - 7 fillable fields, relations: candidate, checklist, buddy.
 
 ### `CandidateSources`
 
-Eloquent model — 5 fillable fields.
+Eloquent model - 5 fillable fields.
 
 ### `ChecklistItem`
 
-Eloquent model — 11 fillable fields, relations: checklist.
+Eloquent model - 11 fillable fields, relations: checklist.
 
 ### `CustomQuestion`
 
-Eloquent model — 8 fillable fields.
+Eloquent model - 8 fillable fields.
 
 ### `Interview`
 
-Eloquent model — 15 fillable fields, relations: candidate, jobPosting, interviewRound, interviewType, interviewFeedbacks.
+Eloquent model - 15 fillable fields, relations: candidate, jobPosting, interviewRound, interviewType, interviewFeedbacks.
 
 ### `InterviewFeedback`
 
-Eloquent model — 12 fillable fields, relations: interview, interviewer.
+Eloquent model - 12 fillable fields, relations: interview, interviewer.
 
 ### `InterviewRound`
 
-Eloquent model — 7 fillable fields, relations: job_posting.
+Eloquent model - 7 fillable fields, relations: job_posting.
 
 ### `InterviewType`
 
-Eloquent model — 5 fillable fields.
+Eloquent model - 5 fillable fields.
 
 ### `Job`
 
-Eloquent model — 6 fillable fields.
+Eloquent model - 6 fillable fields.
 
 ### `JobLocation`
 
-Eloquent model — 10 fillable fields.
+Eloquent model - 10 fillable fields.
 
 ### `JobPosting`
 
-Eloquent model — 30 fillable fields, relations: jobType, location, department.
+Eloquent model - 30 fillable fields, relations: jobType, location, department.
 
 ### `JobType`
 
-Eloquent model — 5 fillable fields.
+Eloquent model - 5 fillable fields.
 
 ### `Offer`
 
-Eloquent model — 21 fillable fields, relations: candidate, job, approvedBy, department.
+Eloquent model - 21 fillable fields, relations: candidate, job, approvedBy, department.
 
 ### `OfferLetter`
 
-Eloquent model — 4 fillable fields.
+Eloquent model - 4 fillable fields.
 
 ### `OnboardingChecklist`
 
-Eloquent model — 6 fillable fields, relations: checklistItems.
+Eloquent model - 6 fillable fields, relations: checklistItems.
 
 ### `RecruitmentSetting`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ## Controllers
 
 ### `CandidateAssessmentController`
 
-HTTP controller — actions: index, create, store, edit, update, destroy.
+HTTP controller - actions: index, create, store, edit, update, destroy.
 
 ### `CandidateController`
 
-HTTP controller — actions: index, create, edit, store, update, destroy, show, getSourcesByJobPosting, getCustomQuestionsByJobPosting, getCandidateJobLocation, updateStatus.
+HTTP controller - actions: index, create, edit, store, update, destroy, show, getSourcesByJobPosting, getCustomQuestionsByJobPosting, getCandidateJobLocation, updateStatus.
 
 ### `CandidateOnboardingController`
 
-HTTP controller — actions: index, create, store, edit, update, destroy, getChecklistsByCandidate.
+HTTP controller - actions: index, create, store, edit, update, destroy, getChecklistsByCandidate.
 
 ### `CandidateSourcesController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `ChecklistItemController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `CustomQuestionController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `DashboardController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `FrontendController`
 
-HTTP controller — actions: jobListings, jobDetails, jobApply, applicationSuccess, trackingForm, trackingVerify, trackingDetails, jobTerms, offerResponse, submitApplication.
+HTTP controller - actions: jobListings, jobDetails, jobApply, applicationSuccess, trackingForm, trackingVerify, trackingDetails, jobTerms, offerResponse, submitApplication.
 
 ### `InterviewController`
 
-HTTP controller — actions: index, create, store, edit, update, destroy, getInterviewRoundsByCandidate.
+HTTP controller - actions: index, create, store, edit, update, destroy, getInterviewRoundsByCandidate.
 
 ### `InterviewFeedbackController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `InterviewRoundController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `InterviewTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `JobLocationController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `JobPostingController`
 
-HTTP controller — actions: index, create, edit, store, update, destroy, togglePublish, show, getJobPostingSettings.
+HTTP controller - actions: index, create, edit, store, update, destroy, togglePublish, show, getJobPostingSettings.
 
 ### `JobTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `OfferController`
 
-HTTP controller — actions: index, create, edit, store, update, updateApprovalStatus, destroy, downloadOfferLetter, sendEmail, showConvertToEmployeeForm, convertToEmployee, getJobsByCandidate.
+HTTP controller - actions: index, create, edit, store, update, updateApprovalStatus, destroy, downloadOfferLetter, sendEmail, showConvertToEmployeeForm, convertToEmployee, getJobsByCandidate.
 
 ### `OnboardingChecklistController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `RecruitmentSettingController`
 
-HTTP controller — actions: index, update, aboutCompany, updateAboutCompany, applicationTips, updateApplicationTips, whatHappensNext, updateWhatHappensNext, needHelp, updateNeedHelp, trackingFaq, updateTrackingFaq, offerLetterTemplate, updateOfferLetterTemplate, getPlaceholders, dashboardWelcomeCard, updateDashboardWelcomeCard.
+HTTP controller - actions: index, update, aboutCompany, updateAboutCompany, applicationTips, updateApplicationTips, whatHappensNext, updateWhatHappensNext, needHelp, updateNeedHelp, trackingFaq, updateTrackingFaq, offerLetterTemplate, updateOfferLetterTemplate, getPlaceholders, dashboardWelcomeCard, updateDashboardWelcomeCard.
 
 ## Events
 
@@ -395,135 +395,135 @@ Event listener.
 
 ### `ConvertToEmployeeRequest`
 
-Form request — validation rules for ConvertToEmployee.
+Form request - validation rules for ConvertToEmployee.
 
 ### `StoreCandidateAssessmentRequest`
 
-Form request — validation rules for StoreCandidateAssessment.
+Form request - validation rules for StoreCandidateAssessment.
 
 ### `StoreCandidateOnboardingRequest`
 
-Form request — validation rules for StoreCandidateOnboarding.
+Form request - validation rules for StoreCandidateOnboarding.
 
 ### `StoreCandidateRequest`
 
-Form request — validation rules for StoreCandidate.
+Form request - validation rules for StoreCandidate.
 
 ### `StoreCandidateSourcesRequest`
 
-Form request — validation rules for StoreCandidateSources.
+Form request - validation rules for StoreCandidateSources.
 
 ### `StoreChecklistItemRequest`
 
-Form request — validation rules for StoreChecklistItem.
+Form request - validation rules for StoreChecklistItem.
 
 ### `StoreCustomQuestionRequest`
 
-Form request — validation rules for StoreCustomQuestion.
+Form request - validation rules for StoreCustomQuestion.
 
 ### `StoreDashboardWelcomeCardRequest`
 
-Form request — validation rules for StoreDashboardWelcomeCard.
+Form request - validation rules for StoreDashboardWelcomeCard.
 
 ### `StoreInterviewFeedbackRequest`
 
-Form request — validation rules for StoreInterviewFeedback.
+Form request - validation rules for StoreInterviewFeedback.
 
 ### `StoreInterviewRequest`
 
-Form request — validation rules for StoreInterview.
+Form request - validation rules for StoreInterview.
 
 ### `StoreInterviewRoundRequest`
 
-Form request — validation rules for StoreInterviewRound.
+Form request - validation rules for StoreInterviewRound.
 
 ### `StoreInterviewTypeRequest`
 
-Form request — validation rules for StoreInterviewType.
+Form request - validation rules for StoreInterviewType.
 
 ### `StoreJobLocationRequest`
 
-Form request — validation rules for StoreJobLocation.
+Form request - validation rules for StoreJobLocation.
 
 ### `StoreJobPostingRequest`
 
-Form request — validation rules for StoreJobPosting.
+Form request - validation rules for StoreJobPosting.
 
 ### `StoreJobTypeRequest`
 
-Form request — validation rules for StoreJobType.
+Form request - validation rules for StoreJobType.
 
 ### `StoreOfferRequest`
 
-Form request — validation rules for StoreOffer.
+Form request - validation rules for StoreOffer.
 
 ### `StoreOnboardingChecklistRequest`
 
-Form request — validation rules for StoreOnboardingChecklist.
+Form request - validation rules for StoreOnboardingChecklist.
 
 ### `SubmitApplicationRequest`
 
-Form request — validation rules for SubmitApplication.
+Form request - validation rules for SubmitApplication.
 
 ### `UpdateCandidateAssessmentRequest`
 
-Form request — validation rules for UpdateCandidateAssessment.
+Form request - validation rules for UpdateCandidateAssessment.
 
 ### `UpdateCandidateOnboardingRequest`
 
-Form request — validation rules for UpdateCandidateOnboarding.
+Form request - validation rules for UpdateCandidateOnboarding.
 
 ### `UpdateCandidateRequest`
 
-Form request — validation rules for UpdateCandidate.
+Form request - validation rules for UpdateCandidate.
 
 ### `UpdateCandidateSourcesRequest`
 
-Form request — validation rules for UpdateCandidateSources.
+Form request - validation rules for UpdateCandidateSources.
 
 ### `UpdateChecklistItemRequest`
 
-Form request — validation rules for UpdateChecklistItem.
+Form request - validation rules for UpdateChecklistItem.
 
 ### `UpdateCustomQuestionRequest`
 
-Form request — validation rules for UpdateCustomQuestion.
+Form request - validation rules for UpdateCustomQuestion.
 
 ### `UpdateInterviewFeedbackRequest`
 
-Form request — validation rules for UpdateInterviewFeedback.
+Form request - validation rules for UpdateInterviewFeedback.
 
 ### `UpdateInterviewRequest`
 
-Form request — validation rules for UpdateInterview.
+Form request - validation rules for UpdateInterview.
 
 ### `UpdateInterviewRoundRequest`
 
-Form request — validation rules for UpdateInterviewRound.
+Form request - validation rules for UpdateInterviewRound.
 
 ### `UpdateInterviewTypeRequest`
 
-Form request — validation rules for UpdateInterviewType.
+Form request - validation rules for UpdateInterviewType.
 
 ### `UpdateJobLocationRequest`
 
-Form request — validation rules for UpdateJobLocation.
+Form request - validation rules for UpdateJobLocation.
 
 ### `UpdateJobPostingRequest`
 
-Form request — validation rules for UpdateJobPosting.
+Form request - validation rules for UpdateJobPosting.
 
 ### `UpdateJobTypeRequest`
 
-Form request — validation rules for UpdateJobType.
+Form request - validation rules for UpdateJobType.
 
 ### `UpdateOfferRequest`
 
-Form request — validation rules for UpdateOffer.
+Form request - validation rules for UpdateOffer.
 
 ### `UpdateOnboardingChecklistRequest`
 
-Form request — validation rules for UpdateOnboardingChecklist.
+Form request - validation rules for UpdateOnboardingChecklist.
 
 ## Providers
 

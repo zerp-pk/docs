@@ -15,21 +15,21 @@ Calendar and scheduling module for the Zerp ERP platform
 
 ### `CalenderUtility`
 
-Eloquent model — 0 fillable fields.
+Eloquent model - 0 fillable fields.
 
 ### `GoogleCalendarSetting`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ## Controllers
 
 ### `CalendarController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `CalendarSettingsController`
 
-HTTP controller — actions: index, store.
+HTTP controller - actions: index, store.
 
 ## Listeners
 

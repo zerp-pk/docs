@@ -15,7 +15,7 @@ Slack notification integration module for the Zerp ERP platform
 
 ### `SlackSettingsController`
 
-HTTP controller — actions: index, store.
+HTTP controller - actions: index, store.
 
 ## Listeners
 

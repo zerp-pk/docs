@@ -5,7 +5,7 @@ sidebar_position: 23
 
 # `zerp/restaurant`
 
-Restaurant management module for Zerp — menu, orders and kitchen
+Restaurant management module for Zerp - menu, orders and kitchen
 
 **Module version:** 1
 
@@ -15,171 +15,171 @@ Restaurant management module for Zerp — menu, orders and kitchen
 
 ### `Area`
 
-Eloquent model — 5 fillable fields, relations: tables.
+Eloquent model - 5 fillable fields, relations: tables.
 
 ### `KitchenStation`
 
-Eloquent model — 5 fillable fields.
+Eloquent model - 5 fillable fields.
 
 ### `MenuCategory`
 
-Eloquent model — 7 fillable fields, relations: items.
+Eloquent model - 7 fillable fields, relations: items.
 
 ### `MenuItem`
 
-Eloquent model — 11 fillable fields, relations: category, station, variations, recipe, modifierGroups.
+Eloquent model - 11 fillable fields, relations: category, station, variations, recipe, modifierGroups.
 
 ### `MenuItemVariation`
 
-Eloquent model — 4 fillable fields, relations: item.
+Eloquent model - 4 fillable fields, relations: item.
 
 ### `ModifierGroup`
 
-Eloquent model — 7 fillable fields, relations: options.
+Eloquent model - 7 fillable fields, relations: options.
 
 ### `ModifierOption`
 
-Eloquent model — 4 fillable fields, relations: group.
+Eloquent model - 4 fillable fields, relations: group.
 
 ### `Order`
 
-Eloquent model — 17 fillable fields, relations: items, table.
+Eloquent model - 17 fillable fields, relations: items, table.
 
 ### `OrderItem`
 
-Eloquent model — 9 fillable fields, relations: order, menuItem, modifiers.
+Eloquent model - 9 fillable fields, relations: order, menuItem, modifiers.
 
 ### `OrderItemModifier`
 
-Eloquent model — 4 fillable fields, relations: orderItem.
+Eloquent model - 4 fillable fields, relations: orderItem.
 
 ### `Recipe`
 
-Eloquent model — 4 fillable fields, relations: menuItem.
+Eloquent model - 4 fillable fields, relations: menuItem.
 
 ### `Reservation`
 
-Eloquent model — 9 fillable fields, relations: table.
+Eloquent model - 9 fillable fields, relations: table.
 
 ### `RestaurantTable`
 
-Eloquent model — 12 fillable fields, relations: area, waiter, mergedInto, mergedTables.
+Eloquent model - 12 fillable fields, relations: area, waiter, mergedInto, mergedTables.
 
 ## Controllers
 
 ### `AreaController`
 
-HTTP controller — actions: store, update, destroy.
+HTTP controller - actions: store, update, destroy.
 
 ### `FloorController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `KitchenController`
 
-HTTP controller — actions: index, itemStatus, orderReady.
+HTTP controller - actions: index, itemStatus, orderReady.
 
 ### `KitchenStationController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `MenuCategoryController`
 
-HTTP controller — actions: store, update, destroy.
+HTTP controller - actions: store, update, destroy.
 
 ### `MenuController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `MenuItemController`
 
-HTTP controller — actions: store, update, destroy, syncRecipe, toggleAvailability.
+HTTP controller - actions: store, update, destroy, syncRecipe, toggleAvailability.
 
 ### `ModifierGroupController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `OrderController`
 
-HTTP controller — actions: pos, index, store, update, settle, cancel.
+HTTP controller - actions: pos, index, store, update, settle, cancel.
 
 ### `ReservationController`
 
-HTTP controller — actions: index, store, update, destroy, seat, cancel, noShow.
+HTTP controller - actions: index, store, update, destroy, seat, cancel, noShow.
 
 ### `RestaurantTableController`
 
-HTTP controller — actions: store, update, destroy, setStatus, assignWaiter, position, merge, split.
+HTTP controller - actions: store, update, destroy, setStatus, assignWaiter, position, merge, split.
 
 ## Requests
 
 ### `SettleOrderRequest`
 
-Form request — validation rules for SettleOrder.
+Form request - validation rules for SettleOrder.
 
 ### `StoreAreaRequest`
 
-Form request — validation rules for StoreArea.
+Form request - validation rules for StoreArea.
 
 ### `StoreKitchenStationRequest`
 
-Form request — validation rules for StoreKitchenStation.
+Form request - validation rules for StoreKitchenStation.
 
 ### `StoreMenuCategoryRequest`
 
-Form request — validation rules for StoreMenuCategory.
+Form request - validation rules for StoreMenuCategory.
 
 ### `StoreMenuItemRequest`
 
-Form request — validation rules for StoreMenuItem.
+Form request - validation rules for StoreMenuItem.
 
 ### `StoreModifierGroupRequest`
 
-Form request — validation rules for StoreModifierGroup.
+Form request - validation rules for StoreModifierGroup.
 
 ### `StoreOrderRequest`
 
-Form request — validation rules for StoreOrder.
+Form request - validation rules for StoreOrder.
 
 ### `StoreReservationRequest`
 
-Form request — validation rules for StoreReservation.
+Form request - validation rules for StoreReservation.
 
 ### `StoreTableRequest`
 
-Form request — validation rules for StoreTable.
+Form request - validation rules for StoreTable.
 
 ### `UpdateAreaRequest`
 
-Form request — validation rules for UpdateArea.
+Form request - validation rules for UpdateArea.
 
 ### `UpdateKitchenStationRequest`
 
-Form request — validation rules for UpdateKitchenStation.
+Form request - validation rules for UpdateKitchenStation.
 
 ### `UpdateMenuCategoryRequest`
 
-Form request — validation rules for UpdateMenuCategory.
+Form request - validation rules for UpdateMenuCategory.
 
 ### `UpdateMenuItemRequest`
 
-Form request — validation rules for UpdateMenuItem.
+Form request - validation rules for UpdateMenuItem.
 
 ### `UpdateModifierGroupRequest`
 
-Form request — validation rules for UpdateModifierGroup.
+Form request - validation rules for UpdateModifierGroup.
 
 ### `UpdateOrderRequest`
 
-Form request — validation rules for UpdateOrder.
+Form request - validation rules for UpdateOrder.
 
 ### `UpdateReservationRequest`
 
-Form request — validation rules for UpdateReservation.
+Form request - validation rules for UpdateReservation.
 
 ### `UpdateTableRequest`
 
-Form request — validation rules for UpdateTable.
+Form request - validation rules for UpdateTable.
 
 ## Providers
 
@@ -195,15 +195,15 @@ Service provider.
 
 ### `OrderBuilder`
 
-Support class — methods: —.
+Support class - methods: none.
 
 ### `RevenuePoster`
 
-Support class — methods: —.
+Support class - methods: none.
 
 ### `StockDeductor`
 
-Support class — methods: —.
+Support class - methods: none.
 
 ## Seeders
 

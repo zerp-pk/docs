@@ -98,7 +98,7 @@ The table displays the following columns:
 -   **Return Date:** The date the return was created.
 -   **Total Amount:** The total value of the returned items.
 -   **Items:** The name and quantity of the returned products.
--   **Status:** The current status of the return — Draft, Approved, or Completed.
+-   **Status:** The current status of the return - Draft, Approved, or Completed.
 -   **Actions:** Quick action buttons that vary depending on the return status.
 
 Action icons available per return:

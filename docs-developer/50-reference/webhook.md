@@ -15,17 +15,17 @@ Webhook management module for the Zerp ERP platform
 
 ### `Webhook`
 
-Eloquent model — 6 fillable fields, relations: webhookModule, creator, createdBy.
+Eloquent model - 6 fillable fields, relations: webhookModule, creator, createdBy.
 
 ### `WebhookModule`
 
-Eloquent model — 3 fillable fields, relations: webhooks.
+Eloquent model - 3 fillable fields, relations: webhooks.
 
 ## Controllers
 
 ### `WebhookController`
 
-HTTP controller — actions: index, store, update, destroy, toggle.
+HTTP controller - actions: index, store, update, destroy, toggle.
 
 ## Listeners
 
