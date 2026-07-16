@@ -15,7 +15,7 @@ Google reCAPTCHA (v2/v3) module for the Zerp ERP platform
 
 ### `GoogleCaptchaSettingsController`
 
-HTTP controller — actions: update.
+HTTP controller - actions: update.
 
 ## Providers
 

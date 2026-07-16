@@ -22,7 +22,7 @@ ZerpPackages/product-service/
     └── ...
 ```
 
-`composer.json` — standard Composer package metadata, PSR-4 autoload, and a
+`composer.json` - standard Composer package metadata, PSR-4 autoload, and a
 Laravel `extra.laravel.providers` entry so the core app auto-discovers the
 service provider:
 
@@ -41,7 +41,7 @@ service provider:
 }
 ```
 
-`module.json` — metadata the core app reads at seed/runtime (not a Laravel
+`module.json` - metadata the core app reads at seed/runtime (not a Laravel
 convention, a Zerp-specific file `App\Classes\Module` and `PackageSeeder`
 look for):
 
@@ -64,7 +64,7 @@ look for):
 the legacy in-repo `packages/local/*` path) for a `module.json` in each
 directory, and for every one it finds:
 
-1. Creates an `AddOn` row (module, price, priority) if one doesn't exist —
+1. Creates an `AddOn` row (module, price, priority) if one doesn't exist,
    `is_enable` is set based on whether the module was selected during
    `app:install` (see below); every discovered module gets a row either
    way, enabled or not.
@@ -74,12 +74,12 @@ directory, and for every one it finds:
 
 This runs automatically as part of `php artisan app:install`, which
 prompts for which modules to enable (a preset bundle or a custom
-selection) — see [Getting Started](../10-getting-started/getting-started.md).
+selection) - see [Getting Started](../10-getting-started/getting-started.md).
 
 ## Cross-module integration: events, not direct calls
 
 Modules never call into each other directly. The core app fires domain
-events (`app/Events/*.php` — `CreatePurchaseInvoice`, `CreateSalesInvoice`,
+events (`app/Events/*.php` - `CreatePurchaseInvoice`, `CreateSalesInvoice`,
 `CreateUser`, `CreateWarehouse`, etc.) and modules that care register a
 listener via their own `EventServiceProvider`:
 
@@ -105,7 +105,7 @@ class PostPurchaseInvoiceListener
 
 This is how `product-service` adjusts warehouse stock when an invoice is
 posted, how `calendar`/`slack`/`telegram` react to the same invoice events
-to create calendar entries or send notifications, and so on — check
+to create calendar entries or send notifications, and so on - check
 `app/Events/` in the core app for the full list of events you can listen
 for before adding a new one.
 
@@ -117,7 +117,7 @@ for roles/permissions, plus a plan/module-enable layer on top:
 - `AddOn` + `UserActiveModule` (seeded by `PackageSeeder`, see above)
   determine whether a module is enabled for a given company at all.
 - `App\Classes\Module::isEnabled($name)` / `allEnabled()` check this at
-  runtime — gate any module-specific route/controller/view behind it if the
+  runtime - gate any module-specific route/controller/view behind it if the
   module can be toggled off.
 - Regular Spatie roles/permissions (`client`, `staff`, custom roles) then
   control what an individual *user* can do within an enabled module.
@@ -126,7 +126,7 @@ for roles/permissions, plus a plan/module-enable layer on top:
 
 Once a module works locally against its path repository, cut a tagged
 release so the core app (and anyone else) can depend on a real version
-instead of a local symlink — see
+instead of a local symlink - see
 [Publishing a Module Package](../30-guides/publishing-a-package.md).
 
 Every class in every module is catalogued in the

@@ -891,7 +891,7 @@ Toggle on or off the following email notification:
 Configure Google reCAPTCHA for form protection to prevent spam and automated submissions.
 
 -   **Enable reCAPTCHA:** Toggle on to enable Google reCAPTCHA protection on forms.
--   **reCAPTCHA Version:** Select the version to use — reCAPTCHA v2 (checkbox) or v3 (invisible).
+-   **reCAPTCHA Version:** Select the version to use - reCAPTCHA v2 (checkbox) or v3 (invisible).
 -   **Site Key:** Enter the public site key from the Google reCAPTCHA console.
 -   **Secret Key:** Enter the secret key from the Google reCAPTCHA console.
 -   **To get your Google reCAPTCHA keys:** go to the Google reCAPTCHA Admin Console, click **“Create”** to create a new site, enter a label and select the reCAPTCHA type, add your domain to the domains list, accept the terms and submit, then copy the Site Key and Secret Key into the fields above.

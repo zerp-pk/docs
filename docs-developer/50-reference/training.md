@@ -15,45 +15,45 @@ Employee training management module for the Zerp ERP platform
 
 ### `Trainer`
 
-Eloquent model — 10 fillable fields, relations: branch, department.
+Eloquent model - 10 fillable fields, relations: branch, department.
 
 ### `Training`
 
-Eloquent model — 16 fillable fields, relations: trainingType, trainer, branch, department, tasks.
+Eloquent model - 16 fillable fields, relations: trainingType, trainer, branch, department, tasks.
 
 ### `TrainingFeedback`
 
-Eloquent model — 6 fillable fields, relations: trainingTask, user.
+Eloquent model - 6 fillable fields, relations: trainingTask, user.
 
 ### `TrainingTask`
 
-Eloquent model — 8 fillable fields, relations: training, assignedUser, feedbacks.
+Eloquent model - 8 fillable fields, relations: training, assignedUser, feedbacks.
 
 ### `TrainingType`
 
-Eloquent model — 6 fillable fields, relations: branch, department.
+Eloquent model - 6 fillable fields, relations: branch, department.
 
 ## Controllers
 
 ### `TrainerController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `TrainingController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `TrainingFeedbackController`
 
-HTTP controller — actions: index, store.
+HTTP controller - actions: index, store.
 
 ### `TrainingTaskController`
 
-HTTP controller — actions: index, store, update, complete, destroy.
+HTTP controller - actions: index, store, update, complete, destroy.
 
 ### `TrainingTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ## Events
 
@@ -113,39 +113,39 @@ Domain event.
 
 ### `StoreTrainerRequest`
 
-Form request — validation rules for StoreTrainer.
+Form request - validation rules for StoreTrainer.
 
 ### `StoreTrainingFeedbackRequest`
 
-Form request — validation rules for StoreTrainingFeedback.
+Form request - validation rules for StoreTrainingFeedback.
 
 ### `StoreTrainingRequest`
 
-Form request — validation rules for StoreTraining.
+Form request - validation rules for StoreTraining.
 
 ### `StoreTrainingTaskRequest`
 
-Form request — validation rules for StoreTrainingTask.
+Form request - validation rules for StoreTrainingTask.
 
 ### `StoreTrainingTypeRequest`
 
-Form request — validation rules for StoreTrainingType.
+Form request - validation rules for StoreTrainingType.
 
 ### `UpdateTrainerRequest`
 
-Form request — validation rules for UpdateTrainer.
+Form request - validation rules for UpdateTrainer.
 
 ### `UpdateTrainingRequest`
 
-Form request — validation rules for UpdateTraining.
+Form request - validation rules for UpdateTraining.
 
 ### `UpdateTrainingTaskRequest`
 
-Form request — validation rules for UpdateTrainingTask.
+Form request - validation rules for UpdateTrainingTask.
 
 ### `UpdateTrainingTypeRequest`
 
-Form request — validation rules for UpdateTrainingType.
+Form request - validation rules for UpdateTrainingType.
 
 ## Providers
 

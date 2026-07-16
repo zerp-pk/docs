@@ -15,17 +15,17 @@ AI-powered assistant module for the Zerp ERP platform
 
 ### `AIPrompt`
 
-Eloquent model — 6 fillable fields.
+Eloquent model - 6 fillable fields.
 
 ## Controllers
 
 ### `AIAssistantSettingsController`
 
-HTTP controller — actions: index, store.
+HTTP controller - actions: index, store.
 
 ### `AIGeneratorController`
 
-HTTP controller — actions: generate.
+HTTP controller - actions: generate.
 
 ## Providers
 

@@ -15,17 +15,17 @@ Zoom meeting integration module for the Zerp ERP platform
 
 ### `ZoomMeeting`
 
-Eloquent model — 17 fillable fields, relations: host.
+Eloquent model - 17 fillable fields, relations: host.
 
 ## Controllers
 
 ### `ZoomMeetingController`
 
-HTTP controller — actions: index, store, update, destroy, updateStatus.
+HTTP controller - actions: index, store, update, destroy, updateStatus.
 
 ### `ZoomMeetingSettingsController`
 
-HTTP controller — actions: update.
+HTTP controller - actions: update.
 
 ## Events
 
@@ -51,11 +51,11 @@ Event listener.
 
 ### `StoreZoomMeetingRequest`
 
-Form request — validation rules for StoreZoomMeeting.
+Form request - validation rules for StoreZoomMeeting.
 
 ### `UpdateZoomMeetingRequest`
 
-Form request — validation rules for UpdateZoomMeeting.
+Form request - validation rules for UpdateZoomMeeting.
 
 ## Providers
 

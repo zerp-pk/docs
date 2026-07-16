@@ -4,8 +4,8 @@ User and developer documentation for [Zerp](https://github.com/zerp-pk/zerp), bu
 
 Two doc sets live side by side:
 
-- `docs-user/` — User Docs (served at `/docs`)
-- `docs-developer/` — Developer Docs (served at `/developer`)
+- `docs-user/` - User Docs (served at `/docs`)
+- `docs-developer/` - Developer Docs (served at `/developer`)
 
 ## Local development
 

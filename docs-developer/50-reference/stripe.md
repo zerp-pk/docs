@@ -15,11 +15,11 @@ Stripe payment gateway integration module for the Zerp ERP platform
 
 ### `StripeController`
 
-HTTP controller — actions: planPayWithStripe, planGetStripeStatus, bookingPayWithStripe, bookingGetStripeStatus, beautySpaPayWithStripe, beautySpaGetStripeStatus, lmsPayWithStripe, lmsGetStripeStatus, laundryPayWithStripe, laundryGetStripeStatus, parkingPayWithStripe, parkingGetStripeStatus, eventsPayWithStripe, eventsGetStripeStatus.
+HTTP controller - actions: planPayWithStripe, planGetStripeStatus, bookingPayWithStripe, bookingGetStripeStatus, beautySpaPayWithStripe, beautySpaGetStripeStatus, lmsPayWithStripe, lmsGetStripeStatus, laundryPayWithStripe, laundryGetStripeStatus, parkingPayWithStripe, parkingGetStripeStatus, eventsPayWithStripe, eventsGetStripeStatus.
 
 ### `StripeSettingsController`
 
-HTTP controller — actions: update.
+HTTP controller - actions: update.
 
 ## Events
 
@@ -43,7 +43,7 @@ Domain event.
 
 ### `UpdateStripeSettingsRequest`
 
-Form request — validation rules for UpdateStripeSettings.
+Form request - validation rules for UpdateStripeSettings.
 
 ## Providers
 

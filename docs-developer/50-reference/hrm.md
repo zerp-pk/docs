@@ -15,367 +15,367 @@ Human Resource Management module for the Zerp ERP platform
 
 ### `Acknowledgment`
 
-Eloquent model — 11 fillable fields, relations: employee, document, assignedBy.
+Eloquent model - 11 fillable fields, relations: employee, document, assignedBy.
 
 ### `Allowance`
 
-Eloquent model — 6 fillable fields, relations: employee, user, allowanceType.
+Eloquent model - 6 fillable fields, relations: employee, user, allowanceType.
 
 ### `AllowanceType`
 
-Eloquent model — 4 fillable fields.
+Eloquent model - 4 fillable fields.
 
 ### `Announcement`
 
-Eloquent model — 10 fillable fields, relations: announcementCategory, departments, approvedBy.
+Eloquent model - 10 fillable fields, relations: announcementCategory, departments, approvedBy.
 
 ### `AnnouncementCategory`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ### `AnnouncementDepartment`
 
-Eloquent model — 4 fillable fields, relations: announcement, department, creator, createdBy.
+Eloquent model - 4 fillable fields, relations: announcement, department, creator, createdBy.
 
 ### `Attendance`
 
-Eloquent model — 13 fillable fields, relations: user, shift.
+Eloquent model - 13 fillable fields, relations: user, shift.
 
 ### `Award`
 
-Eloquent model — 7 fillable fields, relations: awardType, employee.
+Eloquent model - 7 fillable fields, relations: awardType, employee.
 
 ### `AwardType`
 
-Eloquent model — 4 fillable fields.
+Eloquent model - 4 fillable fields.
 
 ### `Branch`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ### `Complaint`
 
-Eloquent model — 12 fillable fields, relations: employee, againstEmployee, complaintType, resolvedBy.
+Eloquent model - 12 fillable fields, relations: employee, againstEmployee, complaintType, resolvedBy.
 
 ### `ComplaintType`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ### `Deduction`
 
-Eloquent model — 6 fillable fields, relations: deductionType, employee.
+Eloquent model - 6 fillable fields, relations: deductionType, employee.
 
 ### `DeductionType`
 
-Eloquent model — 4 fillable fields.
+Eloquent model - 4 fillable fields.
 
 ### `Department`
 
-Eloquent model — 4 fillable fields, relations: branch, employees, announcements.
+Eloquent model - 4 fillable fields, relations: branch, employees, announcements.
 
 ### `Designation`
 
-Eloquent model — 5 fillable fields, relations: branch, department.
+Eloquent model - 5 fillable fields, relations: branch, department.
 
 ### `DocumentCategory`
 
-Eloquent model — 4 fillable fields.
+Eloquent model - 4 fillable fields.
 
 ### `Employee`
 
-Eloquent model — 31 fillable fields, relations: user, branch, department, designation, shift.
+Eloquent model - 31 fillable fields, relations: user, branch, department, designation, shift.
 
 ### `EmployeeDocument`
 
-Eloquent model — 6 fillable fields, relations: user, documentType, media.
+Eloquent model - 6 fillable fields, relations: user, documentType, media.
 
 ### `EmployeeDocumentType`
 
-Eloquent model — 5 fillable fields.
+Eloquent model - 5 fillable fields.
 
 ### `EmployeeTransfer`
 
-Eloquent model — 15 fillable fields, relations: employee, from_branch, from_department, from_designation, to_branch, to_department, to_designation, approved_by.
+Eloquent model - 15 fillable fields, relations: employee, from_branch, from_department, from_designation, to_branch, to_department, to_designation, approved_by.
 
 ### `Event`
 
-Eloquent model — 12 fillable fields, relations: eventType, approvedBy, departments, creator.
+Eloquent model - 12 fillable fields, relations: eventType, approvedBy, departments, creator.
 
 ### `EventType`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ### `Holiday`
 
-Eloquent model — 10 fillable fields, relations: holidayType.
+Eloquent model - 10 fillable fields, relations: holidayType.
 
 ### `HolidayType`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ### `HrmDocument`
 
-Eloquent model — 11 fillable fields, relations: documentCategory, uploadedBy, approvedBy, creator, media.
+Eloquent model - 11 fillable fields, relations: documentCategory, uploadedBy, approvedBy, creator, media.
 
 ### `HrmItem`
 
-Eloquent model — 5 fillable fields.
+Eloquent model - 5 fillable fields.
 
 ### `HrmModel`
 
-Eloquent model — 0 fillable fields.
+Eloquent model - 0 fillable fields.
 
 ### `IpRestrict`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ### `LeaveApplication`
 
-Eloquent model — 14 fillable fields, relations: employee, leave_type, approved_by, media.
+Eloquent model - 14 fillable fields, relations: employee, leave_type, approved_by, media.
 
 ### `LeaveType`
 
-Eloquent model — 7 fillable fields.
+Eloquent model - 7 fillable fields.
 
 ### `Loan`
 
-Eloquent model — 10 fillable fields, relations: loanType, employee.
+Eloquent model - 10 fillable fields, relations: loanType, employee.
 
 ### `LoanType`
 
-Eloquent model — 4 fillable fields.
+Eloquent model - 4 fillable fields.
 
 ### `Overtime`
 
-Eloquent model — 11 fillable fields, relations: employee.
+Eloquent model - 11 fillable fields, relations: employee.
 
 ### `Payroll`
 
-Eloquent model — 15 fillable fields, relations: payrollEntries.
+Eloquent model - 15 fillable fields, relations: payrollEntries.
 
 ### `PayrollEntry`
 
-Eloquent model — 31 fillable fields, relations: payroll, employee.
+Eloquent model - 31 fillable fields, relations: payroll, employee.
 
 ### `Promotion`
 
-Eloquent model — 13 fillable fields, relations: employee, previousBranch, previousDepartment, previousDesignation, currentBranch, currentDepartment, currentDesignation, approvedBy.
+Eloquent model - 13 fillable fields, relations: employee, previousBranch, previousDepartment, previousDesignation, currentBranch, currentDepartment, currentDesignation, approvedBy.
 
 ### `Resignation`
 
-Eloquent model — 9 fillable fields, relations: employee, approvedBy.
+Eloquent model - 9 fillable fields, relations: employee, approvedBy.
 
 ### `Shift`
 
-Eloquent model — 11 fillable fields, relations: creator.
+Eloquent model - 11 fillable fields, relations: creator.
 
 ### `Termination`
 
-Eloquent model — 11 fillable fields, relations: employee, terminationType, approvedBy.
+Eloquent model - 11 fillable fields, relations: employee, terminationType, approvedBy.
 
 ### `TerminationType`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ### `Warning`
 
-Eloquent model — 10 fillable fields, relations: employee, warningBy, warningType.
+Eloquent model - 10 fillable fields, relations: employee, warningBy, warningType.
 
 ### `WarningType`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ## Controllers
 
 ### `AcknowledgmentController`
 
-HTTP controller — actions: index, store, update, destroy, updateStatus.
+HTTP controller - actions: index, store, update, destroy, updateStatus.
 
 ### `AllowanceController`
 
-HTTP controller — actions: store, update, destroy.
+HTTP controller - actions: store, update, destroy.
 
 ### `AllowanceTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `AnnouncementCategoryController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `AnnouncementController`
 
-HTTP controller — actions: index, store, update, updateStatus, destroy.
+HTTP controller - actions: index, store, update, updateStatus, destroy.
 
 ### `AttendanceController`
 
-HTTP controller — actions: index, store, update, destroy, clockIn, clockOut, getClockStatus.
+HTTP controller - actions: index, store, update, destroy, clockIn, clockOut, getClockStatus.
 
 ### `AwardController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `AwardTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `BranchController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `ComplaintController`
 
-HTTP controller — actions: index, store, update, updateStatus, destroy.
+HTTP controller - actions: index, store, update, updateStatus, destroy.
 
 ### `ComplaintTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `DashboardController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `DeductionController`
 
-HTTP controller — actions: store, update, destroy.
+HTTP controller - actions: store, update, destroy.
 
 ### `DeductionTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `DepartmentController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `DesignationController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `DocumentCategoryController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `EmployeeController`
 
-HTTP controller — actions: index, create, store, edit, update, destroy, show, card, deleteDocument.
+HTTP controller - actions: index, create, store, edit, update, destroy, show, card, deleteDocument.
 
 ### `EmployeeDocumentTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `EmployeeTransferController`
 
-HTTP controller — actions: index, store, update, destroy, updateStatus.
+HTTP controller - actions: index, store, update, destroy, updateStatus.
 
 ### `EventController`
 
-HTTP controller — actions: index, store, update, destroy, statusUpdate, calendar.
+HTTP controller - actions: index, store, update, destroy, statusUpdate, calendar.
 
 ### `EventTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `HolidayController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `HolidayTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `HrmDocumentController`
 
-HTTP controller — actions: index, store, update, updateStatus, destroy.
+HTTP controller - actions: index, store, update, updateStatus, destroy.
 
 ### `IpRestrictController`
 
-HTTP controller — actions: index, store, update, destroy, toggleSetting.
+HTTP controller - actions: index, store, update, destroy, toggleSetting.
 
 ### `LeaveApplicationController`
 
-HTTP controller — actions: index, store, update, destroy, updateStatus, getLeaveBalance, getLeaveTypesByEmployee.
+HTTP controller - actions: index, store, update, destroy, updateStatus, getLeaveBalance, getLeaveTypesByEmployee.
 
 ### `LeaveBalanceController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `LeaveTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `LoanController`
 
-HTTP controller — actions: store, update, destroy.
+HTTP controller - actions: store, update, destroy.
 
 ### `LoanTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `OvertimeController`
 
-HTTP controller — actions: store, update, destroy.
+HTTP controller - actions: store, update, destroy.
 
 ### `PayrollController`
 
-HTTP controller — actions: index, store, update, show, destroy, runPayroll, destroyEntry, printPayslip, paySalary.
+HTTP controller - actions: index, store, update, show, destroy, runPayroll, destroyEntry, printPayslip, paySalary.
 
 ### `PromotionController`
 
-HTTP controller — actions: index, store, update, destroy, updateStatus.
+HTTP controller - actions: index, store, update, destroy, updateStatus.
 
 ### `ResignationController`
 
-HTTP controller — actions: index, store, update, destroy, updateStatus.
+HTTP controller - actions: index, store, update, destroy, updateStatus.
 
 ### `SetSalaryController`
 
-HTTP controller — actions: index, show, update.
+HTTP controller - actions: index, show, update.
 
 ### `ShiftController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `TerminationController`
 
-HTTP controller — actions: index, store, update, destroy, updateStatus.
+HTTP controller - actions: index, store, update, destroy, updateStatus.
 
 ### `TerminationTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `WarningController`
 
-HTTP controller — actions: index, store, update, destroy, response.
+HTTP controller - actions: index, store, update, destroy, response.
 
 ### `WarningTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `WorkingDaysController`
 
-HTTP controller — actions: index, update.
+HTTP controller - actions: index, update.
 
 ## API Controllers
 
 ### `AttendanceApiController`
 
-HTTP controller — actions: clockInOut, history.
+HTTP controller - actions: clockInOut, history.
 
 ### `DashboardApiController`
 
-HTTP controller — actions: index, getEvents.
+HTTP controller - actions: index, getEvents.
 
 ### `HolidayApiController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `LeaveApiController`
 
-HTTP controller — actions: index, store.
+HTTP controller - actions: index, store.
 
 ### `LeaveTypeApiController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ## Events
 
@@ -857,315 +857,315 @@ Event listener.
 
 ### `StoreAcknowledgmentRequest`
 
-Form request — validation rules for StoreAcknowledgment.
+Form request - validation rules for StoreAcknowledgment.
 
 ### `StoreAllowanceRequest`
 
-Form request — validation rules for StoreAllowance.
+Form request - validation rules for StoreAllowance.
 
 ### `StoreAllowanceTypeRequest`
 
-Form request — validation rules for StoreAllowanceType.
+Form request - validation rules for StoreAllowanceType.
 
 ### `StoreAnnouncementCategoryRequest`
 
-Form request — validation rules for StoreAnnouncementCategory.
+Form request - validation rules for StoreAnnouncementCategory.
 
 ### `StoreAnnouncementRequest`
 
-Form request — validation rules for StoreAnnouncement.
+Form request - validation rules for StoreAnnouncement.
 
 ### `StoreAttendanceRequest`
 
-Form request — validation rules for StoreAttendance.
+Form request - validation rules for StoreAttendance.
 
 ### `StoreAwardRequest`
 
-Form request — validation rules for StoreAward.
+Form request - validation rules for StoreAward.
 
 ### `StoreAwardTypeRequest`
 
-Form request — validation rules for StoreAwardType.
+Form request - validation rules for StoreAwardType.
 
 ### `StoreBranchRequest`
 
-Form request — validation rules for StoreBranch.
+Form request - validation rules for StoreBranch.
 
 ### `StoreComplaintRequest`
 
-Form request — validation rules for StoreComplaint.
+Form request - validation rules for StoreComplaint.
 
 ### `StoreComplaintTypeRequest`
 
-Form request — validation rules for StoreComplaintType.
+Form request - validation rules for StoreComplaintType.
 
 ### `StoreDeductionRequest`
 
-Form request — validation rules for StoreDeduction.
+Form request - validation rules for StoreDeduction.
 
 ### `StoreDeductionTypeRequest`
 
-Form request — validation rules for StoreDeductionType.
+Form request - validation rules for StoreDeductionType.
 
 ### `StoreDepartmentRequest`
 
-Form request — validation rules for StoreDepartment.
+Form request - validation rules for StoreDepartment.
 
 ### `StoreDesignationRequest`
 
-Form request — validation rules for StoreDesignation.
+Form request - validation rules for StoreDesignation.
 
 ### `StoreDocumentCategoryRequest`
 
-Form request — validation rules for StoreDocumentCategory.
+Form request - validation rules for StoreDocumentCategory.
 
 ### `StoreDocumentRequest`
 
-Form request — validation rules for StoreDocument.
+Form request - validation rules for StoreDocument.
 
 ### `StoreEmployeeDocumentTypeRequest`
 
-Form request — validation rules for StoreEmployeeDocumentType.
+Form request - validation rules for StoreEmployeeDocumentType.
 
 ### `StoreEmployeeRequest`
 
-Form request — validation rules for StoreEmployee.
+Form request - validation rules for StoreEmployee.
 
 ### `StoreEmployeeTransferRequest`
 
-Form request — validation rules for StoreEmployeeTransfer.
+Form request - validation rules for StoreEmployeeTransfer.
 
 ### `StoreEventRequest`
 
-Form request — validation rules for StoreEvent.
+Form request - validation rules for StoreEvent.
 
 ### `StoreEventTypeRequest`
 
-Form request — validation rules for StoreEventType.
+Form request - validation rules for StoreEventType.
 
 ### `StoreHolidayRequest`
 
-Form request — validation rules for StoreHoliday.
+Form request - validation rules for StoreHoliday.
 
 ### `StoreHolidayTypeRequest`
 
-Form request — validation rules for StoreHolidayType.
+Form request - validation rules for StoreHolidayType.
 
 ### `StoreHrmDocumentRequest`
 
-Form request — validation rules for StoreHrmDocument.
+Form request - validation rules for StoreHrmDocument.
 
 ### `StoreIpRestrictRequest`
 
-Form request — validation rules for StoreIpRestrict.
+Form request - validation rules for StoreIpRestrict.
 
 ### `StoreLeaveApplicationRequest`
 
-Form request — validation rules for StoreLeaveApplication.
+Form request - validation rules for StoreLeaveApplication.
 
 ### `StoreLeaveTypeRequest`
 
-Form request — validation rules for StoreLeaveType.
+Form request - validation rules for StoreLeaveType.
 
 ### `StoreLoanRequest`
 
-Form request — validation rules for StoreLoan.
+Form request - validation rules for StoreLoan.
 
 ### `StoreLoanTypeRequest`
 
-Form request — validation rules for StoreLoanType.
+Form request - validation rules for StoreLoanType.
 
 ### `StoreOvertimeRequest`
 
-Form request — validation rules for StoreOvertime.
+Form request - validation rules for StoreOvertime.
 
 ### `StorePayrollRequest`
 
-Form request — validation rules for StorePayroll.
+Form request - validation rules for StorePayroll.
 
 ### `StorePromotionRequest`
 
-Form request — validation rules for StorePromotion.
+Form request - validation rules for StorePromotion.
 
 ### `StoreResignationRequest`
 
-Form request — validation rules for StoreResignation.
+Form request - validation rules for StoreResignation.
 
 ### `StoreShiftRequest`
 
-Form request — validation rules for StoreShift.
+Form request - validation rules for StoreShift.
 
 ### `StoreTerminationRequest`
 
-Form request — validation rules for StoreTermination.
+Form request - validation rules for StoreTermination.
 
 ### `StoreTerminationTypeRequest`
 
-Form request — validation rules for StoreTerminationType.
+Form request - validation rules for StoreTerminationType.
 
 ### `StoreWarningRequest`
 
-Form request — validation rules for StoreWarning.
+Form request - validation rules for StoreWarning.
 
 ### `StoreWarningTypeRequest`
 
-Form request — validation rules for StoreWarningType.
+Form request - validation rules for StoreWarningType.
 
 ### `UpdateAcknowledgmentRequest`
 
-Form request — validation rules for UpdateAcknowledgment.
+Form request - validation rules for UpdateAcknowledgment.
 
 ### `UpdateAllowanceRequest`
 
-Form request — validation rules for UpdateAllowance.
+Form request - validation rules for UpdateAllowance.
 
 ### `UpdateAllowanceTypeRequest`
 
-Form request — validation rules for UpdateAllowanceType.
+Form request - validation rules for UpdateAllowanceType.
 
 ### `UpdateAnnouncementCategoryRequest`
 
-Form request — validation rules for UpdateAnnouncementCategory.
+Form request - validation rules for UpdateAnnouncementCategory.
 
 ### `UpdateAnnouncementRequest`
 
-Form request — validation rules for UpdateAnnouncement.
+Form request - validation rules for UpdateAnnouncement.
 
 ### `UpdateAttendanceRequest`
 
-Form request — validation rules for UpdateAttendance.
+Form request - validation rules for UpdateAttendance.
 
 ### `UpdateAwardRequest`
 
-Form request — validation rules for UpdateAward.
+Form request - validation rules for UpdateAward.
 
 ### `UpdateAwardTypeRequest`
 
-Form request — validation rules for UpdateAwardType.
+Form request - validation rules for UpdateAwardType.
 
 ### `UpdateBranchRequest`
 
-Form request — validation rules for UpdateBranch.
+Form request - validation rules for UpdateBranch.
 
 ### `UpdateComplaintRequest`
 
-Form request — validation rules for UpdateComplaint.
+Form request - validation rules for UpdateComplaint.
 
 ### `UpdateComplaintTypeRequest`
 
-Form request — validation rules for UpdateComplaintType.
+Form request - validation rules for UpdateComplaintType.
 
 ### `UpdateDeductionRequest`
 
-Form request — validation rules for UpdateDeduction.
+Form request - validation rules for UpdateDeduction.
 
 ### `UpdateDeductionTypeRequest`
 
-Form request — validation rules for UpdateDeductionType.
+Form request - validation rules for UpdateDeductionType.
 
 ### `UpdateDepartmentRequest`
 
-Form request — validation rules for UpdateDepartment.
+Form request - validation rules for UpdateDepartment.
 
 ### `UpdateDesignationRequest`
 
-Form request — validation rules for UpdateDesignation.
+Form request - validation rules for UpdateDesignation.
 
 ### `UpdateDocumentCategoryRequest`
 
-Form request — validation rules for UpdateDocumentCategory.
+Form request - validation rules for UpdateDocumentCategory.
 
 ### `UpdateDocumentRequest`
 
-Form request — validation rules for UpdateDocument.
+Form request - validation rules for UpdateDocument.
 
 ### `UpdateEmployeeDocumentTypeRequest`
 
-Form request — validation rules for UpdateEmployeeDocumentType.
+Form request - validation rules for UpdateEmployeeDocumentType.
 
 ### `UpdateEmployeeRequest`
 
-Form request — validation rules for UpdateEmployee.
+Form request - validation rules for UpdateEmployee.
 
 ### `UpdateEmployeeTransferRequest`
 
-Form request — validation rules for UpdateEmployeeTransfer.
+Form request - validation rules for UpdateEmployeeTransfer.
 
 ### `UpdateEventRequest`
 
-Form request — validation rules for UpdateEvent.
+Form request - validation rules for UpdateEvent.
 
 ### `UpdateEventTypeRequest`
 
-Form request — validation rules for UpdateEventType.
+Form request - validation rules for UpdateEventType.
 
 ### `UpdateHolidayRequest`
 
-Form request — validation rules for UpdateHoliday.
+Form request - validation rules for UpdateHoliday.
 
 ### `UpdateHolidayTypeRequest`
 
-Form request — validation rules for UpdateHolidayType.
+Form request - validation rules for UpdateHolidayType.
 
 ### `UpdateHrmDocumentRequest`
 
-Form request — validation rules for UpdateHrmDocument.
+Form request - validation rules for UpdateHrmDocument.
 
 ### `UpdateIpRestrictRequest`
 
-Form request — validation rules for UpdateIpRestrict.
+Form request - validation rules for UpdateIpRestrict.
 
 ### `UpdateLeaveApplicationRequest`
 
-Form request — validation rules for UpdateLeaveApplication.
+Form request - validation rules for UpdateLeaveApplication.
 
 ### `UpdateLeaveTypeRequest`
 
-Form request — validation rules for UpdateLeaveType.
+Form request - validation rules for UpdateLeaveType.
 
 ### `UpdateLoanRequest`
 
-Form request — validation rules for UpdateLoan.
+Form request - validation rules for UpdateLoan.
 
 ### `UpdateLoanTypeRequest`
 
-Form request — validation rules for UpdateLoanType.
+Form request - validation rules for UpdateLoanType.
 
 ### `UpdateOvertimeRequest`
 
-Form request — validation rules for UpdateOvertime.
+Form request - validation rules for UpdateOvertime.
 
 ### `UpdatePayrollRequest`
 
-Form request — validation rules for UpdatePayroll.
+Form request - validation rules for UpdatePayroll.
 
 ### `UpdatePromotionRequest`
 
-Form request — validation rules for UpdatePromotion.
+Form request - validation rules for UpdatePromotion.
 
 ### `UpdateResignationRequest`
 
-Form request — validation rules for UpdateResignation.
+Form request - validation rules for UpdateResignation.
 
 ### `UpdateShiftRequest`
 
-Form request — validation rules for UpdateShift.
+Form request - validation rules for UpdateShift.
 
 ### `UpdateTerminationRequest`
 
-Form request — validation rules for UpdateTermination.
+Form request - validation rules for UpdateTermination.
 
 ### `UpdateTerminationTypeRequest`
 
-Form request — validation rules for UpdateTerminationType.
+Form request - validation rules for UpdateTerminationType.
 
 ### `UpdateWarningRequest`
 
-Form request — validation rules for UpdateWarning.
+Form request - validation rules for UpdateWarning.
 
 ### `UpdateWarningTypeRequest`
 
-Form request — validation rules for UpdateWarningType.
+Form request - validation rules for UpdateWarningType.
 
 ## Providers
 

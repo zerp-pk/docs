@@ -15,17 +15,17 @@ Google Meet integration module for the Zerp ERP platform
 
 ### `GoogleMeeting`
 
-Eloquent model — 12 fillable fields, relations: host.
+Eloquent model - 12 fillable fields, relations: host.
 
 ## Controllers
 
 ### `GoogleMeetController`
 
-HTTP controller — actions: index, store, update, destroy, updateStatus.
+HTTP controller - actions: index, store, update, destroy, updateStatus.
 
 ### `GoogleMeetSettingsController`
 
-HTTP controller — actions: update.
+HTTP controller - actions: update.
 
 ## Events
 
@@ -51,11 +51,11 @@ Event listener.
 
 ### `StoreGoogleMeetingRequest`
 
-Form request — validation rules for StoreGoogleMeeting.
+Form request - validation rules for StoreGoogleMeeting.
 
 ### `UpdateGoogleMeetingRequest`
 
-Form request — validation rules for UpdateGoogleMeeting.
+Form request - validation rules for UpdateGoogleMeeting.
 
 ## Providers
 

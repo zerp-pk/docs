@@ -15,33 +15,33 @@ Custom form builder module for the Zerp ERP platform
 
 ### `Form`
 
-Eloquent model — 7 fillable fields, relations: fields, responses, conversion.
+Eloquent model - 7 fillable fields, relations: fields, responses, conversion.
 
 ### `FormBuilderUtility`
 
-Eloquent model — 0 fillable fields.
+Eloquent model - 0 fillable fields.
 
 ### `FormConversion`
 
-Eloquent model — 7 fillable fields, relations: form.
+Eloquent model - 7 fillable fields, relations: form.
 
 ### `FormField`
 
-Eloquent model — 9 fillable fields, relations: form.
+Eloquent model - 9 fillable fields, relations: form.
 
 ### `FormResponse`
 
-Eloquent model — 4 fillable fields, relations: form.
+Eloquent model - 4 fillable fields, relations: form.
 
 ## Controllers
 
 ### `FormController`
 
-HTTP controller — actions: index, create, store, update, destroy, edit, responses, destroyResponse, updateFields, destroyField, updateConversion, getConversionData, conversion.
+HTTP controller - actions: index, create, store, update, destroy, edit, responses, destroyResponse, updateFields, destroyField, updateConversion, getConversionData, conversion.
 
 ### `PublicFormController`
 
-HTTP controller — actions: show, submit.
+HTTP controller - actions: show, submit.
 
 ## Events
 
@@ -75,19 +75,19 @@ Event listener.
 
 ### `FormFieldRequest`
 
-Form request — validation rules for FormField.
+Form request - validation rules for FormField.
 
 ### `StoreFormConversionRequest`
 
-Form request — validation rules for StoreFormConversion.
+Form request - validation rules for StoreFormConversion.
 
 ### `StoreFormRequest`
 
-Form request — validation rules for StoreForm.
+Form request - validation rules for StoreForm.
 
 ### `UpdateFormRequest`
 
-Form request — validation rules for UpdateForm.
+Form request - validation rules for UpdateForm.
 
 ## Providers
 

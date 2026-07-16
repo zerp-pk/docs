@@ -15,99 +15,99 @@ Project management module for the Zerp ERP platform
 
 ### `ActivityLog`
 
-Eloquent model — 5 fillable fields, relations: user.
+Eloquent model - 5 fillable fields, relations: user.
 
 ### `BugComment`
 
-Eloquent model — 3 fillable fields, relations: bug, user.
+Eloquent model - 3 fillable fields, relations: bug, user.
 
 ### `BugStage`
 
-Eloquent model — 6 fillable fields.
+Eloquent model - 6 fillable fields.
 
 ### `Project`
 
-Eloquent model — 8 fillable fields, relations: teamMembers, clients, milestones, tasks, bugs, activityLogs, files.
+Eloquent model - 8 fillable fields, relations: teamMembers, clients, milestones, tasks, bugs, activityLogs, files.
 
 ### `ProjectBug`
 
-Eloquent model — 8 fillable fields, relations: project, bugStage, assignedUser, comments.
+Eloquent model - 8 fillable fields, relations: project, bugStage, assignedUser, comments.
 
 ### `ProjectClient`
 
-Eloquent model — 2 fillable fields.
+Eloquent model - 2 fillable fields.
 
 ### `ProjectFile`
 
-Eloquent model — 4 fillable fields, relations: project, media.
+Eloquent model - 4 fillable fields, relations: project, media.
 
 ### `ProjectMilestone`
 
-Eloquent model — 8 fillable fields, relations: project.
+Eloquent model - 8 fillable fields, relations: project.
 
 ### `ProjectTask`
 
-Eloquent model — 10 fillable fields, relations: project, milestone, taskStage, assignedUser, comments, subtasks.
+Eloquent model - 10 fillable fields, relations: project, milestone, taskStage, assignedUser, comments, subtasks.
 
 ### `ProjectUser`
 
-Eloquent model — 2 fillable fields.
+Eloquent model - 2 fillable fields.
 
 ### `TaskComment`
 
-Eloquent model — 3 fillable fields, relations: task, user.
+Eloquent model - 3 fillable fields, relations: task, user.
 
 ### `TaskStage`
 
-Eloquent model — 6 fillable fields.
+Eloquent model - 6 fillable fields.
 
 ### `TaskSubtask`
 
-Eloquent model — 5 fillable fields, relations: task, user.
+Eloquent model - 5 fillable fields, relations: task, user.
 
 ## Controllers
 
 ### `BugStageController`
 
-HTTP controller — actions: index, store, update, destroy, reorder.
+HTTP controller - actions: index, store, update, destroy, reorder.
 
 ### `DashboardController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `ProjectBugController`
 
-HTTP controller — actions: index, kanban, store, show, update, destroy, move, getBugs, getComments, storeComment, destroyComment.
+HTTP controller - actions: index, kanban, store, show, update, destroy, move, getBugs, getComments, storeComment, destroyComment.
 
 ### `ProjectController`
 
-HTTP controller — actions: index, store, show, edit, update, destroy, duplicate, invite, deleteMember, inviteClient, deleteClient, storeMilestone, updateMilestone, deleteMilestone, storeFiles, deleteFile, apiIndex.
+HTTP controller - actions: index, store, show, edit, update, destroy, duplicate, invite, deleteMember, inviteClient, deleteClient, storeMilestone, updateMilestone, deleteMilestone, storeFiles, deleteFile, apiIndex.
 
 ### `ProjectReportController`
 
-HTTP controller — actions: index, show.
+HTTP controller - actions: index, show.
 
 ### `ProjectTaskController`
 
-HTTP controller — actions: index, store, kanban, calendar, move, update, getTasks, show, destroy, getComments, storeComment, destroyComment, getSubtasks, storeSubtask, toggleSubtask, apiTasks.
+HTTP controller - actions: index, store, kanban, calendar, move, update, getTasks, show, destroy, getComments, storeComment, destroyComment, getSubtasks, storeSubtask, toggleSubtask, apiTasks.
 
 ### `TaskStageController`
 
-HTTP controller — actions: index, store, update, destroy, reorder.
+HTTP controller - actions: index, store, update, destroy, reorder.
 
 ## API Controllers
 
 ### `DashboardApiController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `ProjectApiController`
 
-HTTP controller — actions: index, projectCreateAndUpdate, getUsers, destroyProject, projectDetails, projectStatusUpdate, projectActivity, projectFileUpload.
+HTTP controller - actions: index, projectCreateAndUpdate, getUsers, destroyProject, projectDetails, projectStatusUpdate, projectActivity, projectFileUpload.
 
 ### `TaskApiController`
 
-HTTP controller — actions: index, taskCreateAndUpdate, taskDelete, taskDetails, taskStageUpdate, taskboard.
+HTTP controller - actions: index, taskCreateAndUpdate, taskDelete, taskDetails, taskStageUpdate, taskboard.
 
 ## Events
 
@@ -241,35 +241,35 @@ Event listener.
 
 ### `StoreMilestoneRequest`
 
-Form request — validation rules for StoreMilestone.
+Form request - validation rules for StoreMilestone.
 
 ### `StoreProjectBugRequest`
 
-Form request — validation rules for StoreProjectBug.
+Form request - validation rules for StoreProjectBug.
 
 ### `StoreProjectRequest`
 
-Form request — validation rules for StoreProject.
+Form request - validation rules for StoreProject.
 
 ### `StoreProjectTaskRequest`
 
-Form request — validation rules for StoreProjectTask.
+Form request - validation rules for StoreProjectTask.
 
 ### `UpdateMilestoneRequest`
 
-Form request — validation rules for UpdateMilestone.
+Form request - validation rules for UpdateMilestone.
 
 ### `UpdateProjectBugRequest`
 
-Form request — validation rules for UpdateProjectBug.
+Form request - validation rules for UpdateProjectBug.
 
 ### `UpdateProjectRequest`
 
-Form request — validation rules for UpdateProject.
+Form request - validation rules for UpdateProject.
 
 ### `UpdateProjectTaskRequest`
 
-Form request — validation rules for UpdateProjectTask.
+Form request - validation rules for UpdateProjectTask.
 
 ## Providers
 

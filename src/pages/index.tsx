@@ -33,7 +33,7 @@ function DocsCards() {
               </div>
               <div className="card__body">
                 <p>
-                  Learn how to use Zerp — logging in, managing users, and
+                  Learn how to use Zerp - logging in, managing users, and
                   every feature module from Accounting to Support Ticket.
                 </p>
               </div>
@@ -53,7 +53,7 @@ function DocsCards() {
               </div>
               <div className="card__body">
                 <p>
-                  Learn how Zerp is built — the core app + module package
+                  Learn how Zerp is built - the core app + module package
                   architecture, local dev setup, Docker/CI, the Media
                   Library, and how to contribute.
                 </p>

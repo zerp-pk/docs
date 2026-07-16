@@ -15,37 +15,37 @@ Budget planning module for the Zerp ERP platform
 
 ### `Budget`
 
-Eloquent model — 8 fillable fields, relations: budgetPeriod, approvedBy, allocations.
+Eloquent model - 8 fillable fields, relations: budgetPeriod, approvedBy, allocations.
 
 ### `BudgetAllocation`
 
-Eloquent model — 7 fillable fields, relations: budget, account.
+Eloquent model - 7 fillable fields, relations: budget, account.
 
 ### `BudgetMonitoring`
 
-Eloquent model — 9 fillable fields, relations: budget.
+Eloquent model - 9 fillable fields, relations: budget.
 
 ### `BudgetPeriod`
 
-Eloquent model — 8 fillable fields, relations: approvedBy, budgets.
+Eloquent model - 8 fillable fields, relations: approvedBy, budgets.
 
 ## Controllers
 
 ### `BudgetAllocationController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `BudgetController`
 
-HTTP controller — actions: index, store, update, approve, active, close, destroy.
+HTTP controller - actions: index, store, update, approve, active, close, destroy.
 
 ### `BudgetMonitoringController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `BudgetPeriodController`
 
-HTTP controller — actions: index, store, update, approve, active, close, destroy.
+HTTP controller - actions: index, store, update, approve, active, close, destroy.
 
 ## Events
 
@@ -119,27 +119,27 @@ Event listener.
 
 ### `StoreBudgetAllocationRequest`
 
-Form request — validation rules for StoreBudgetAllocation.
+Form request - validation rules for StoreBudgetAllocation.
 
 ### `StoreBudgetPeriodRequest`
 
-Form request — validation rules for StoreBudgetPeriod.
+Form request - validation rules for StoreBudgetPeriod.
 
 ### `StoreBudgetRequest`
 
-Form request — validation rules for StoreBudget.
+Form request - validation rules for StoreBudget.
 
 ### `UpdateBudgetAllocationRequest`
 
-Form request — validation rules for UpdateBudgetAllocation.
+Form request - validation rules for UpdateBudgetAllocation.
 
 ### `UpdateBudgetPeriodRequest`
 
-Form request — validation rules for UpdateBudgetPeriod.
+Form request - validation rules for UpdateBudgetPeriod.
 
 ### `UpdateBudgetRequest`
 
-Form request — validation rules for UpdateBudget.
+Form request - validation rules for UpdateBudget.
 
 ## Providers
 

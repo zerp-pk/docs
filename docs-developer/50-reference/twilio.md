@@ -15,7 +15,7 @@ Twilio SMS integration module for the Zerp ERP platform
 
 ### `TwilioSettingsController`
 
-HTTP controller — actions: index, store.
+HTTP controller - actions: index, store.
 
 ## Listeners
 

@@ -15,41 +15,41 @@ Product and service catalog module for the Zerp ERP platform
 
 ### `ProductServiceCategory`
 
-Eloquent model — 4 fillable fields.
+Eloquent model - 4 fillable fields.
 
 ### `ProductServiceItem`
 
-Eloquent model — 14 fillable fields, relations: category, unitRelation, warehouseStocks.
+Eloquent model - 14 fillable fields, relations: category, unitRelation, warehouseStocks.
 
 ### `ProductServiceTax`
 
-Eloquent model — 4 fillable fields.
+Eloquent model - 4 fillable fields.
 
 ### `ProductServiceUnit`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ### `WarehouseStock`
 
-Eloquent model — 3 fillable fields, relations: product, warehouse.
+Eloquent model - 3 fillable fields, relations: product, warehouse.
 
 ## Controllers
 
 ### `CategoryController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `ProductServiceItemController`
 
-HTTP controller — actions: index, create, store, show, edit, update, destroy, stockIndex, apiIndex, stockStore.
+HTTP controller - actions: index, create, store, show, edit, update, destroy, stockIndex, apiIndex, stockStore.
 
 ### `TaxController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `UnitController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ## Events
 
@@ -131,11 +131,11 @@ Event listener.
 
 ### `StoreProductServiceItemRequest`
 
-Form request — validation rules for StoreProductServiceItem.
+Form request - validation rules for StoreProductServiceItem.
 
 ### `UpdateProductServiceItemRequest`
 
-Form request — validation rules for UpdateProductServiceItem.
+Form request - validation rules for UpdateProductServiceItem.
 
 ## Providers
 

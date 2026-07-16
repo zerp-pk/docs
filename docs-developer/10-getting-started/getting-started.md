@@ -5,7 +5,7 @@ sidebar_position: 2
 
 This is a condensed walkthrough. The
 [`zerp-pk/zerp` README](https://github.com/zerp-pk/zerp#readme) is the
-source of truth — check it if anything here goes stale.
+source of truth - check it if anything here goes stale.
 
 ## Prerequisites
 
@@ -21,7 +21,7 @@ core app, matching what `composer.json`'s path repositories expect:
 
 ```
 some-folder/
-├── zerp/            # core app — github.com/zerp-pk/zerp
+├── zerp/            # core app - github.com/zerp-pk/zerp
 └── ZerpPackages/
     ├── hrm/          # github.com/zerp-pk/hrm
     ├── account/      # github.com/zerp-pk/account
@@ -30,7 +30,7 @@ some-folder/
 ```
 
 The full module → repository table is in the core app's README. You don't
-need every module for local development — only clone the ones you're
+need every module for local development - only clone the ones you're
 working on or testing against; `composer install` just won't symlink the
 ones that are missing.
 
@@ -54,7 +54,7 @@ php artisan storage:link
 ```
 
 This runs `migrate:fresh` (drops all tables) then prompts for a module
-preset — `Full Suite`, `HR Only`, `Sales & CRM`, or a `Custom selection`
+preset - `Full Suite`, `HR Only`, `Sales & CRM`, or a `Custom selection`
 picker (see `config/module-presets.php` in the core app). Every module
 found under `vendor/zerp/*` still gets registered into the `add_ons`
 table via `PackageSeeder`, but only the ones you select are enabled and
@@ -72,7 +72,7 @@ npm run dev
 Visit `http://localhost:8000`, log in with the seeded super-admin
 (`company@example.com` / `1234`).
 
-## Module images are symlinks — know this before you debug them
+## Module images are symlinks - know this before you debug them
 
 Each module ships its own images (favicon, and for the Landing Page module the
 hero/gallery/module art). They are **not copied** into `public/`. At module
@@ -92,7 +92,7 @@ So a working image URL depends on a two-hop symlink chain. Two consequences:
   fresh clone inherited symlinks pointing at the original author's home
   directory, and *every module image 404'd*. If you ever see links like
   `/home/someone/...` in `public/packages`, your checkout predates the fix.
-- **A module you didn't clone leaves a dangling link.** That's harmless — only
+- **A module you didn't clone leaves a dangling link.** That's harmless - only
   that module's images 404.
 
 Images not loading? Check for dangling links first, then republish:
@@ -112,7 +112,7 @@ re-run. Note it only runs on install, so nothing repairs these automatically.
 Two related traps:
 
 - `php artisan storage:link` covers `public/storage` (uploaded media, served via
-  `imageUrlPrefix`). That's a **separate** link from the ones above — having one
+  `imageUrlPrefix`). That's a **separate** link from the ones above - having one
   working tells you nothing about the other.
 - **On Windows**, git only materialises real symlinks with Developer Mode or an
   elevated shell; otherwise it checks them out as small text files containing the
@@ -121,7 +121,7 @@ Two related traps:
 
 ## Prefer Docker?
 
-`docker compose up -d --build` from the core app repo works the same way —
+`docker compose up -d --build` from the core app repo works the same way,
 see [Docker & CI](../30-guides/docker-and-ci.md). The sibling `ZerpPackages/` checkout is
 still required either way, since the Docker build context is the **parent**
 directory of `zerp/`.

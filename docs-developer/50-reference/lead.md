@@ -15,187 +15,187 @@ CRM and lead management module for the Zerp ERP platform
 
 ### `ClientDeal`
 
-Eloquent model — 2 fillable fields, relations: deal, client.
+Eloquent model - 2 fillable fields, relations: deal, client.
 
 ### `ClientPermission`
 
-Eloquent model — 3 fillable fields, relations: client, deal.
+Eloquent model - 3 fillable fields, relations: client, deal.
 
 ### `Deal`
 
-Eloquent model — 16 fillable fields, relations: pipeline, stage, lostReason, creator, userDeals, users, tasks, emails, discussions, calls, activities, complete_tasks, clientDeals, files.
+Eloquent model - 16 fillable fields, relations: pipeline, stage, lostReason, creator, userDeals, users, tasks, emails, discussions, calls, activities, complete_tasks, clientDeals, files.
 
 ### `DealActivityLog`
 
-Eloquent model — 4 fillable fields, relations: user, deal.
+Eloquent model - 4 fillable fields, relations: user, deal.
 
 ### `DealCall`
 
-Eloquent model — 7 fillable fields, relations: deal, user, assignee.
+Eloquent model - 7 fillable fields, relations: deal, user, assignee.
 
 ### `DealDiscussion`
 
-Eloquent model — 4 fillable fields, relations: deal, creator.
+Eloquent model - 4 fillable fields, relations: deal, creator.
 
 ### `DealEmail`
 
-Eloquent model — 4 fillable fields, relations: deal.
+Eloquent model - 4 fillable fields, relations: deal.
 
 ### `DealFile`
 
-Eloquent model — 4 fillable fields, relations: deal, media.
+Eloquent model - 4 fillable fields, relations: deal, media.
 
 ### `DealStage`
 
-Eloquent model — 6 fillable fields, relations: pipeline.
+Eloquent model - 6 fillable fields, relations: pipeline.
 
 ### `DealTask`
 
-Eloquent model — 9 fillable fields, relations: deal.
+Eloquent model - 9 fillable fields, relations: deal.
 
 ### `Label`
 
-Eloquent model — 5 fillable fields, relations: pipeline.
+Eloquent model - 5 fillable fields, relations: pipeline.
 
 ### `Lead`
 
-Eloquent model — 20 fillable fields, relations: stage, user, userLeads, tasks, complete_tasks, emails, discussions, files, calls, activities, pipeline, sources, products.
+Eloquent model - 20 fillable fields, relations: stage, user, userLeads, tasks, complete_tasks, emails, discussions, files, calls, activities, pipeline, sources, products.
 
 ### `LeadActivityLog`
 
-Eloquent model — 4 fillable fields, relations: user, lead.
+Eloquent model - 4 fillable fields, relations: user, lead.
 
 ### `LeadCall`
 
-Eloquent model — 7 fillable fields, relations: lead, user, assignee.
+Eloquent model - 7 fillable fields, relations: lead, user, assignee.
 
 ### `LeadDiscussion`
 
-Eloquent model — 4 fillable fields, relations: lead, creator.
+Eloquent model - 4 fillable fields, relations: lead, creator.
 
 ### `LeadEmail`
 
-Eloquent model — 4 fillable fields, relations: lead.
+Eloquent model - 4 fillable fields, relations: lead.
 
 ### `LeadFile`
 
-Eloquent model — 4 fillable fields, relations: lead, media.
+Eloquent model - 4 fillable fields, relations: lead, media.
 
 ### `LeadScoreRule`
 
-Eloquent model — 8 fillable fields.
+Eloquent model - 8 fillable fields.
 
 ### `LeadStage`
 
-Eloquent model — 6 fillable fields, relations: pipeline.
+Eloquent model - 6 fillable fields, relations: pipeline.
 
 ### `LeadTask`
 
-Eloquent model — 9 fillable fields, relations: lead.
+Eloquent model - 9 fillable fields, relations: lead.
 
 ### `LeadUtility`
 
-Eloquent model — 0 fillable fields.
+Eloquent model - 0 fillable fields.
 
 ### `LostReason`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ### `Pipeline`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ### `Source`
 
-Eloquent model — 3 fillable fields.
+Eloquent model - 3 fillable fields.
 
 ### `User`
 
-Eloquent model — 0 fillable fields, relations: deals, leads, clientDeals, clientEstimations, clientContracts.
+Eloquent model - 0 fillable fields, relations: deals, leads, clientDeals, clientEstimations, clientContracts.
 
 ### `UserDeal`
 
-Eloquent model — 2 fillable fields, relations: user, deal.
+Eloquent model - 2 fillable fields, relations: user, deal.
 
 ### `UserLead`
 
-Eloquent model — 2 fillable fields, relations: user, lead.
+Eloquent model - 2 fillable fields, relations: user, lead.
 
 ## Controllers
 
 ### `ActivityController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `DashboardController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `DealController`
 
-HTTP controller — actions: index, store, show, update, destroy, updateLabels, assignUsers, removeUser, assignProducts, removeProduct, assignSources, removeSource, storeEmail, storeDiscussion, assignClients, removeClient, callStore, callUpdate, callDestroy, storeFile, deleteFile, order, changeStatus, markWon, markLost.
+HTTP controller - actions: index, store, show, update, destroy, updateLabels, assignUsers, removeUser, assignProducts, removeProduct, assignSources, removeSource, storeEmail, storeDiscussion, assignClients, removeClient, callStore, callUpdate, callDestroy, storeFile, deleteFile, order, changeStatus, markWon, markLost.
 
 ### `DealStageController`
 
-HTTP controller — actions: index, store, update, destroy, updateOrder.
+HTTP controller - actions: index, store, update, destroy, updateOrder.
 
 ### `DealTaskController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `LabelController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `LeadController`
 
-HTTP controller — actions: index, store, show, edit, update, destroy, getStagesByPipeline, updateLabels, getAvailableUsers, assignUsers, removeUser, getAvailableProducts, assignProducts, removeProduct, getAvailableSources, assignSources, removeSource, storeEmail, storeDiscussion, storeFile, deleteFile, callStore, callUpdate, callDestroy, order, getExistingClients, convertToDeal.
+HTTP controller - actions: index, store, show, edit, update, destroy, getStagesByPipeline, updateLabels, getAvailableUsers, assignUsers, removeUser, getAvailableProducts, assignProducts, removeProduct, getAvailableSources, assignSources, removeSource, storeEmail, storeDiscussion, storeFile, deleteFile, callStore, callUpdate, callDestroy, order, getExistingClients, convertToDeal.
 
 ### `LeadScoreRuleController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `LeadStageController`
 
-HTTP controller — actions: index, store, update, destroy, updateOrder.
+HTTP controller - actions: index, store, update, destroy, updateOrder.
 
 ### `LeadTaskController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `LostReasonController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `PipelineController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `ReportController`
 
-HTTP controller — actions: index, leadReports, dealReports.
+HTTP controller - actions: index, leadReports, dealReports.
 
 ### `SourceController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ## API Controllers
 
 ### `DashboardApiController`
 
-HTTP controller — actions: index, chartData.
+HTTP controller - actions: index, chartData.
 
 ### `LeadApiController`
 
-HTTP controller — actions: index, leadCreateAndUpdate, createLead, updateLead, leadStageUpdate, leadDetails, destroy, getUsers, getRequestData.
+HTTP controller - actions: index, leadCreateAndUpdate, createLead, updateLead, leadStageUpdate, leadDetails, destroy, getUsers, getRequestData.
 
 ### `LeadStageApiController`
 
-HTTP controller — actions: index, leadstageCreateAndUpdate, createLeadstage, updateLeadstage.
+HTTP controller - actions: index, leadstageCreateAndUpdate, createLeadstage, updateLeadstage.
 
 ### `PipelineApiController`
 
-HTTP controller — actions: index, pipelineCreateAndUpdate.
+HTTP controller - actions: index, pipelineCreateAndUpdate.
 
 ## Events
 
@@ -449,115 +449,115 @@ Event listener.
 
 ### `AssignUsersRequest`
 
-Form request — validation rules for AssignUsers.
+Form request - validation rules for AssignUsers.
 
 ### `ConvertToDealRequest`
 
-Form request — validation rules for ConvertToDeal.
+Form request - validation rules for ConvertToDeal.
 
 ### `StoreDealCallRequest`
 
-Form request — validation rules for StoreDealCall.
+Form request - validation rules for StoreDealCall.
 
 ### `StoreDealDiscussionRequest`
 
-Form request — validation rules for StoreDealDiscussion.
+Form request - validation rules for StoreDealDiscussion.
 
 ### `StoreDealEmailRequest`
 
-Form request — validation rules for StoreDealEmail.
+Form request - validation rules for StoreDealEmail.
 
 ### `StoreDealRequest`
 
-Form request — validation rules for StoreDeal.
+Form request - validation rules for StoreDeal.
 
 ### `StoreDealStageRequest`
 
-Form request — validation rules for StoreDealStage.
+Form request - validation rules for StoreDealStage.
 
 ### `StoreDealTaskRequest`
 
-Form request — validation rules for StoreDealTask.
+Form request - validation rules for StoreDealTask.
 
 ### `StoreLabelRequest`
 
-Form request — validation rules for StoreLabel.
+Form request - validation rules for StoreLabel.
 
 ### `StoreLeadCallRequest`
 
-Form request — validation rules for StoreLeadCall.
+Form request - validation rules for StoreLeadCall.
 
 ### `StoreLeadDiscussionRequest`
 
-Form request — validation rules for StoreLeadDiscussion.
+Form request - validation rules for StoreLeadDiscussion.
 
 ### `StoreLeadEmailRequest`
 
-Form request — validation rules for StoreLeadEmail.
+Form request - validation rules for StoreLeadEmail.
 
 ### `StoreLeadRequest`
 
-Form request — validation rules for StoreLead.
+Form request - validation rules for StoreLead.
 
 ### `StoreLeadStageRequest`
 
-Form request — validation rules for StoreLeadStage.
+Form request - validation rules for StoreLeadStage.
 
 ### `StoreLeadTaskRequest`
 
-Form request — validation rules for StoreLeadTask.
+Form request - validation rules for StoreLeadTask.
 
 ### `StorePipelineRequest`
 
-Form request — validation rules for StorePipeline.
+Form request - validation rules for StorePipeline.
 
 ### `StoreSourceRequest`
 
-Form request — validation rules for StoreSource.
+Form request - validation rules for StoreSource.
 
 ### `UpdateDealCallRequest`
 
-Form request — validation rules for UpdateDealCall.
+Form request - validation rules for UpdateDealCall.
 
 ### `UpdateDealRequest`
 
-Form request — validation rules for UpdateDeal.
+Form request - validation rules for UpdateDeal.
 
 ### `UpdateDealStageRequest`
 
-Form request — validation rules for UpdateDealStage.
+Form request - validation rules for UpdateDealStage.
 
 ### `UpdateDealTaskRequest`
 
-Form request — validation rules for UpdateDealTask.
+Form request - validation rules for UpdateDealTask.
 
 ### `UpdateLabelRequest`
 
-Form request — validation rules for UpdateLabel.
+Form request - validation rules for UpdateLabel.
 
 ### `UpdateLeadCallRequest`
 
-Form request — validation rules for UpdateLeadCall.
+Form request - validation rules for UpdateLeadCall.
 
 ### `UpdateLeadRequest`
 
-Form request — validation rules for UpdateLead.
+Form request - validation rules for UpdateLead.
 
 ### `UpdateLeadStageRequest`
 
-Form request — validation rules for UpdateLeadStage.
+Form request - validation rules for UpdateLeadStage.
 
 ### `UpdateLeadTaskRequest`
 
-Form request — validation rules for UpdateLeadTask.
+Form request - validation rules for UpdateLeadTask.
 
 ### `UpdatePipelineRequest`
 
-Form request — validation rules for UpdatePipeline.
+Form request - validation rules for UpdatePipeline.
 
 ### `UpdateSourceRequest`
 
-Form request — validation rules for UpdateSource.
+Form request - validation rules for UpdateSource.
 
 ## Providers
 
@@ -573,11 +573,11 @@ Service provider.
 
 ### `Activities`
 
-Support class — methods: —.
+Support class - methods: none.
 
 ### `LeadScoring`
 
-Support class — methods: —.
+Support class - methods: none.
 
 ## Seeders
 

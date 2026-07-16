@@ -15,41 +15,41 @@ Double-entry bookkeeping module for the Zerp ERP platform
 
 ### `BalanceSheet`
 
-Eloquent model — 9 fillable fields, relations: items, notes.
+Eloquent model - 9 fillable fields, relations: items, notes.
 
 ### `BalanceSheetItem`
 
-Eloquent model — 7 fillable fields, relations: balanceSheet, account.
+Eloquent model - 7 fillable fields, relations: balanceSheet, account.
 
 ### `BalanceSheetNote`
 
-Eloquent model — 6 fillable fields, relations: balanceSheet.
+Eloquent model - 6 fillable fields, relations: balanceSheet.
 
 ### `ComparativeBalanceSheet`
 
-Eloquent model — 5 fillable fields, relations: currentPeriod, previousPeriod.
+Eloquent model - 5 fillable fields, relations: currentPeriod, previousPeriod.
 
 ## Controllers
 
 ### `BalanceSheetController`
 
-HTTP controller — actions: index, list, store, show, finalize, destroy, addNote, deleteNote, compare, comparisons, showComparison, yearEndClose, print, comparisonPrint.
+HTTP controller - actions: index, list, store, show, finalize, destroy, addNote, deleteNote, compare, comparisons, showComparison, yearEndClose, print, comparisonPrint.
 
 ### `LedgerSummaryController`
 
-HTTP controller — actions: index, print.
+HTTP controller - actions: index, print.
 
 ### `ProfitLossController`
 
-HTTP controller — actions: index, print.
+HTTP controller - actions: index, print.
 
 ### `ReportController`
 
-HTTP controller — actions: index, generalLedger, printGeneralLedger, accountStatement, printAccountStatement, journalEntry, printJournalEntry, accountBalance, printAccountBalance, cashFlow, printCashFlow, expenseReport, printExpenseReport.
+HTTP controller - actions: index, generalLedger, printGeneralLedger, accountStatement, printAccountStatement, journalEntry, printJournalEntry, accountBalance, printAccountBalance, cashFlow, printCashFlow, expenseReport, printExpenseReport.
 
 ### `TrialBalanceController`
 
-HTTP controller — actions: index, print.
+HTTP controller - actions: index, print.
 
 ## Events
 
@@ -81,19 +81,19 @@ Domain event.
 
 ### `CompareBalanceSheetRequest`
 
-Form request — validation rules for CompareBalanceSheet.
+Form request - validation rules for CompareBalanceSheet.
 
 ### `StoreBalanceSheetNoteRequest`
 
-Form request — validation rules for StoreBalanceSheetNote.
+Form request - validation rules for StoreBalanceSheetNote.
 
 ### `StoreBalanceSheetRequest`
 
-Form request — validation rules for StoreBalanceSheet.
+Form request - validation rules for StoreBalanceSheet.
 
 ### `YearEndCloseRequest`
 
-Form request — validation rules for YearEndClose.
+Form request - validation rules for YearEndClose.
 
 ## Providers
 

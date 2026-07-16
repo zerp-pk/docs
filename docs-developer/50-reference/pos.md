@@ -15,29 +15,29 @@ Point of Sale module for the Zerp ERP platform
 
 ### `Pos`
 
-Eloquent model — 7 fillable fields, relations: customer, warehouse, items, payment.
+Eloquent model - 7 fillable fields, relations: customer, warehouse, items, payment.
 
 ### `PosItem`
 
-Eloquent model — 10 fillable fields, relations: sale, product.
+Eloquent model - 10 fillable fields, relations: sale, product.
 
 ### `PosPayment`
 
-Eloquent model — 6 fillable fields, relations: sale.
+Eloquent model - 6 fillable fields, relations: sale.
 
 ## Controllers
 
 ### `DashboardController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `PosController`
 
-HTTP controller — actions: index, create, getProducts, store, show, barcode, printBarcode, print, getNextPosNumber.
+HTTP controller - actions: index, create, getProducts, store, show, barcode, printBarcode, print, getNextPosNumber.
 
 ### `PosReportController`
 
-HTTP controller — actions: sales, products, customers.
+HTTP controller - actions: sales, products, customers.
 
 ## Events
 
@@ -49,7 +49,7 @@ Domain event.
 
 ### `StorePosRequest`
 
-Form request — validation rules for StorePos.
+Form request - validation rules for StorePos.
 
 ## Providers
 

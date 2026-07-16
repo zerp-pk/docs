@@ -15,181 +15,181 @@ Accounting module for the Zerp ERP platform
 
 ### `AccountCategory`
 
-Eloquent model — 7 fillable fields, relations: accountTypes.
+Eloquent model - 7 fillable fields, relations: accountTypes.
 
 ### `AccountType`
 
-Eloquent model — 10 fillable fields, relations: category, chartOfAccounts.
+Eloquent model - 10 fillable fields, relations: category, chartOfAccounts.
 
 ### `BankAccount`
 
-Eloquent model — 15 fillable fields, relations: glAccount, gl_account.
+Eloquent model - 15 fillable fields, relations: glAccount, gl_account.
 
 ### `BankTransaction`
 
-Eloquent model — 11 fillable fields, relations: bankAccount, creator.
+Eloquent model - 11 fillable fields, relations: bankAccount, creator.
 
 ### `BankTransfer`
 
-Eloquent model — 12 fillable fields, relations: fromAccount, toAccount, journalEntry, creator.
+Eloquent model - 12 fillable fields, relations: fromAccount, toAccount, journalEntry, creator.
 
 ### `ChartOfAccount`
 
-Eloquent model — 13 fillable fields, relations: accountType, account_type, parent_account, journalEntryItems.
+Eloquent model - 13 fillable fields, relations: accountType, account_type, parent_account, journalEntryItems.
 
 ### `CreditNote`
 
-Eloquent model — 17 fillable fields, relations: items, customer, invoice, salesReturn, approvedBy, applications.
+Eloquent model - 17 fillable fields, relations: items, customer, invoice, salesReturn, approvedBy, applications.
 
 ### `CreditNoteApplication`
 
-Eloquent model — 6 fillable fields, relations: creditNote, payment.
+Eloquent model - 6 fillable fields, relations: creditNote, payment.
 
 ### `CreditNoteItem`
 
-Eloquent model — 9 fillable fields, relations: creditNote, product, taxes.
+Eloquent model - 9 fillable fields, relations: creditNote, product, taxes.
 
 ### `CreditNoteItemTax`
 
-Eloquent model — 3 fillable fields, relations: item.
+Eloquent model - 3 fillable fields, relations: item.
 
 ### `Customer`
 
-Eloquent model — 14 fillable fields, relations: user.
+Eloquent model - 14 fillable fields, relations: user.
 
 ### `CustomerPayment`
 
-Eloquent model — 10 fillable fields, relations: customer, bankAccount, allocations, creditNoteApplications.
+Eloquent model - 10 fillable fields, relations: customer, bankAccount, allocations, creditNoteApplications.
 
 ### `CustomerPaymentAllocation`
 
-Eloquent model — 5 fillable fields, relations: payment, invoice.
+Eloquent model - 5 fillable fields, relations: payment, invoice.
 
 ### `DebitNote`
 
-Eloquent model — 17 fillable fields, relations: items, vendor, invoice, purchaseReturn, approvedBy, applications.
+Eloquent model - 17 fillable fields, relations: items, vendor, invoice, purchaseReturn, approvedBy, applications.
 
 ### `DebitNoteApplication`
 
-Eloquent model — 6 fillable fields, relations: debitNote, payment.
+Eloquent model - 6 fillable fields, relations: debitNote, payment.
 
 ### `DebitNoteItem`
 
-Eloquent model — 11 fillable fields, relations: debitNote, product, taxes.
+Eloquent model - 11 fillable fields, relations: debitNote, product, taxes.
 
 ### `DebitNoteItemTax`
 
-Eloquent model — 3 fillable fields, relations: item.
+Eloquent model - 3 fillable fields, relations: item.
 
 ### `Expense`
 
-Eloquent model — 12 fillable fields, relations: category, bankAccount, chartOfAccount, approvedBy.
+Eloquent model - 12 fillable fields, relations: category, bankAccount, chartOfAccount, approvedBy.
 
 ### `ExpenseCategories`
 
-Eloquent model — 7 fillable fields, relations: gl_account.
+Eloquent model - 7 fillable fields, relations: gl_account.
 
 ### `JournalEntry`
 
-Eloquent model — 11 fillable fields, relations: items.
+Eloquent model - 11 fillable fields, relations: items.
 
 ### `JournalEntryItem`
 
-Eloquent model — 7 fillable fields, relations: journalEntry, account.
+Eloquent model - 7 fillable fields, relations: journalEntry, account.
 
 ### `OpeningBalance`
 
-Eloquent model — 7 fillable fields, relations: account.
+Eloquent model - 7 fillable fields, relations: account.
 
 ### `Revenue`
 
-Eloquent model — 12 fillable fields, relations: category, bankAccount, chartOfAccount, approvedBy.
+Eloquent model - 12 fillable fields, relations: category, bankAccount, chartOfAccount, approvedBy.
 
 ### `RevenueCategories`
 
-Eloquent model — 7 fillable fields, relations: gl_account.
+Eloquent model - 7 fillable fields, relations: gl_account.
 
 ### `Vendor`
 
-Eloquent model — 19 fillable fields, relations: user.
+Eloquent model - 19 fillable fields, relations: user.
 
 ### `VendorPayment`
 
-Eloquent model — 10 fillable fields, relations: vendor, bankAccount, allocations, debitNoteApplications.
+Eloquent model - 10 fillable fields, relations: vendor, bankAccount, allocations, debitNoteApplications.
 
 ### `VendorPaymentAllocation`
 
-Eloquent model — 3 fillable fields, relations: payment, invoice.
+Eloquent model - 3 fillable fields, relations: payment, invoice.
 
 ## Controllers
 
 ### `AccountTypeController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `BankAccountController`
 
-HTTP controller — actions: index, store, update, destroy, bankAccounts.
+HTTP controller - actions: index, store, update, destroy, bankAccounts.
 
 ### `BankTransactionController`
 
-HTTP controller — actions: index, markReconciled.
+HTTP controller - actions: index, markReconciled.
 
 ### `BankTransferController`
 
-HTTP controller — actions: index, store, update, destroy, process.
+HTTP controller - actions: index, store, update, destroy, process.
 
 ### `ChartOfAccountController`
 
-HTTP controller — actions: index, store, update, show, destroy.
+HTTP controller - actions: index, store, update, show, destroy.
 
 ### `CreditNoteController`
 
-HTTP controller — actions: index, show, approve, destroy.
+HTTP controller - actions: index, show, approve, destroy.
 
 ### `CustomerController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `CustomerPaymentController`
 
-HTTP controller — actions: index, store, getOutstandingInvoices, updateStatus, destroy.
+HTTP controller - actions: index, store, getOutstandingInvoices, updateStatus, destroy.
 
 ### `DashboardController`
 
-HTTP controller — actions: index.
+HTTP controller - actions: index.
 
 ### `DebitNoteController`
 
-HTTP controller — actions: index, show, approve, destroy.
+HTTP controller - actions: index, show, approve, destroy.
 
 ### `ExpenseCategoriesController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `ExpenseController`
 
-HTTP controller — actions: index, store, update, destroy, approve, post.
+HTTP controller - actions: index, store, update, destroy, approve, post.
 
 ### `ReportsController`
 
-HTTP controller — actions: index, invoiceAging, billAging, taxSummary, customerBalance, vendorBalance, printInvoiceAging, printBillAging, printTaxSummary, printCustomerBalance, printVendorBalance, customerDetail, vendorDetail, printCustomerDetail, printVendorDetail.
+HTTP controller - actions: index, invoiceAging, billAging, taxSummary, customerBalance, vendorBalance, printInvoiceAging, printBillAging, printTaxSummary, printCustomerBalance, printVendorBalance, customerDetail, vendorDetail, printCustomerDetail, printVendorDetail.
 
 ### `RevenueCategoriesController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `RevenueController`
 
-HTTP controller — actions: index, store, update, destroy, approve, post.
+HTTP controller - actions: index, store, update, destroy, approve, post.
 
 ### `VendorController`
 
-HTTP controller — actions: index, store, update, destroy.
+HTTP controller - actions: index, store, update, destroy.
 
 ### `VendorPaymentController`
 
-HTTP controller — actions: index, store, getOutstandingInvoices, updateStatus, destroy.
+HTTP controller - actions: index, store, getOutstandingInvoices, updateStatus, destroy.
 
 ## Events
 
@@ -467,91 +467,91 @@ Event listener.
 
 ### `StoreAccountTypeRequest`
 
-Form request — validation rules for StoreAccountType.
+Form request - validation rules for StoreAccountType.
 
 ### `StoreBankAccountRequest`
 
-Form request — validation rules for StoreBankAccount.
+Form request - validation rules for StoreBankAccount.
 
 ### `StoreBankTransferRequest`
 
-Form request — validation rules for StoreBankTransfer.
+Form request - validation rules for StoreBankTransfer.
 
 ### `StoreChartOfAccountRequest`
 
-Form request — validation rules for StoreChartOfAccount.
+Form request - validation rules for StoreChartOfAccount.
 
 ### `StoreCustomerPaymentRequest`
 
-Form request — validation rules for StoreCustomerPayment.
+Form request - validation rules for StoreCustomerPayment.
 
 ### `StoreCustomerRequest`
 
-Form request — validation rules for StoreCustomer.
+Form request - validation rules for StoreCustomer.
 
 ### `StoreExpenseCategoriesRequest`
 
-Form request — validation rules for StoreExpenseCategories.
+Form request - validation rules for StoreExpenseCategories.
 
 ### `StoreExpenseRequest`
 
-Form request — validation rules for StoreExpense.
+Form request - validation rules for StoreExpense.
 
 ### `StoreRevenueCategoriesRequest`
 
-Form request — validation rules for StoreRevenueCategories.
+Form request - validation rules for StoreRevenueCategories.
 
 ### `StoreRevenueRequest`
 
-Form request — validation rules for StoreRevenue.
+Form request - validation rules for StoreRevenue.
 
 ### `StoreVendorPaymentRequest`
 
-Form request — validation rules for StoreVendorPayment.
+Form request - validation rules for StoreVendorPayment.
 
 ### `StoreVendorRequest`
 
-Form request — validation rules for StoreVendor.
+Form request - validation rules for StoreVendor.
 
 ### `UpdateAccountTypeRequest`
 
-Form request — validation rules for UpdateAccountType.
+Form request - validation rules for UpdateAccountType.
 
 ### `UpdateBankAccountRequest`
 
-Form request — validation rules for UpdateBankAccount.
+Form request - validation rules for UpdateBankAccount.
 
 ### `UpdateBankTransferRequest`
 
-Form request — validation rules for UpdateBankTransfer.
+Form request - validation rules for UpdateBankTransfer.
 
 ### `UpdateChartOfAccountRequest`
 
-Form request — validation rules for UpdateChartOfAccount.
+Form request - validation rules for UpdateChartOfAccount.
 
 ### `UpdateCustomerRequest`
 
-Form request — validation rules for UpdateCustomer.
+Form request - validation rules for UpdateCustomer.
 
 ### `UpdateExpenseCategoriesRequest`
 
-Form request — validation rules for UpdateExpenseCategories.
+Form request - validation rules for UpdateExpenseCategories.
 
 ### `UpdateExpenseRequest`
 
-Form request — validation rules for UpdateExpense.
+Form request - validation rules for UpdateExpense.
 
 ### `UpdateRevenueCategoriesRequest`
 
-Form request — validation rules for UpdateRevenueCategories.
+Form request - validation rules for UpdateRevenueCategories.
 
 ### `UpdateRevenueRequest`
 
-Form request — validation rules for UpdateRevenue.
+Form request - validation rules for UpdateRevenue.
 
 ### `UpdateVendorRequest`
 
-Form request — validation rules for UpdateVendor.
+Form request - validation rules for UpdateVendor.
 
 ## Providers
 
