@@ -81,6 +81,9 @@ credentials you set during install (default `admin@zerp.pk` /
 `Admin@1234` if you skipped the prompts), or with the seeded test company
 account `testcompany@zerp.pk` / `Test@1234`.
 
+The interactive API docs (Swagger UI) are at `http://localhost:8000/docs/api`
+once the app is running - see [API Documentation](../30-guides/api-documentation.md).
+
 ## Module images are symlinks - know this before you debug them
 
 Each module ships its own images (favicon, and for the Landing Page module the
