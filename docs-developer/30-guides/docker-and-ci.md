@@ -31,16 +31,18 @@ every module symlink would point at nothing. Every build stage that runs
 container can reach them.
 
 ```bash
-cp .env.example .env
+cp .env.example .env          # Windows: copy .env.example .env
 docker compose up -d --build
 docker compose exec app php artisan app:install --force
 docker compose exec app php artisan storage:link
 ```
 
 Add `-it` to the `exec` command (`docker compose exec -it app ...`) to get
-`app:install`'s interactive module picker; without a TTY it installs every
-module by default. Pass `--preset=<name>` or `--modules=account,hrm,pos`
-to choose modules non-interactively instead.
+`app:install`'s interactive prompts (super admin credentials, then the
+module picker); without a TTY it installs every module and falls back to
+the default super admin. Pass the credentials with `--admin-name`,
+`--admin-email`, `--admin-password` and the modules with `--preset=<name>`
+or `--modules=account,hrm,pos` to run it fully non-interactively.
 
 ## CI
 
