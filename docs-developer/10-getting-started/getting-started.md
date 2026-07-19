@@ -40,11 +40,16 @@ ones that are missing.
 cd zerp
 composer install
 npm install
-cp .env.example .env
+cp .env.example .env          # Windows: copy .env.example .env
 php artisan key:generate
 ```
 
 Set `DB_HOST`, `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD` in `.env`.
+
+> The `composer`, `npm`, and `php artisan` commands are identical on
+> Linux, macOS, and Windows. Only shell built-ins differ (`cp` -> `copy`,
+> `grep` -> `findstr`); the Windows form is noted inline. WSL users can
+> run the Linux commands as-is.
 
 ## 3. Install the app
 
@@ -53,14 +58,16 @@ php artisan app:install --force
 php artisan storage:link
 ```
 
-This runs `migrate:fresh` (drops all tables) then prompts for a module
-preset - `Full Suite`, `HR Only`, `Sales & CRM`, or a `Custom selection`
-picker (see `config/module-presets.php` in the core app). Every module
-found under `vendor/zerp/*` still gets registered into the `add_ons`
-table via `PackageSeeder`, but only the ones you select are enabled and
-seeded with demo data. For non-interactive installs, pass
+This runs `migrate:fresh` (drops all tables), prompts for the **super
+admin** name/email/password, then for a module preset - `Full Suite`,
+`HR Only`, `Sales & CRM`, or a `Custom selection` picker (see
+`config/module-presets.php` in the core app). Every module found under
+`vendor/zerp/*` still gets registered into the `add_ons` table via
+`PackageSeeder`, but only the ones you select are enabled and seeded with
+demo data. For non-interactive installs, pass the admin credentials with
+`--admin-name`, `--admin-email`, `--admin-password`, and the modules with
 `--preset=<name>` or `--modules=account,hrm,pos` instead of answering the
-prompt. Only run this against a disposable database.
+prompts. Only run this against a disposable database.
 
 ## 4. Run it
 
@@ -69,8 +76,10 @@ php artisan serve --port=8000
 npm run dev
 ```
 
-Visit `http://localhost:8000`, log in with the seeded super-admin
-(`company@example.com` / `1234`).
+Visit `http://localhost:8000`. Log in as the super admin with the
+credentials you set during install (default `admin@zerp.pk` /
+`Admin@1234` if you skipped the prompts), or with the seeded test company
+account `testcompany@zerp.pk` / `Test@1234`.
 
 ## Module images are symlinks - know this before you debug them
 
