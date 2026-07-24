@@ -9,7 +9,7 @@ Recruitment and hiring module for the Zerp ERP platform
 
 **Module version:** 5
 
-**Classes documented:** 149
+**Classes documented:** 153
 
 ## Models
 
@@ -158,6 +158,24 @@ HTTP controller - actions: index, store, update, destroy.
 ### `RecruitmentSettingController`
 
 HTTP controller - actions: index, update, aboutCompany, updateAboutCompany, applicationTips, updateApplicationTips, whatHappensNext, updateWhatHappensNext, needHelp, updateNeedHelp, trackingFaq, updateTrackingFaq, offerLetterTemplate, updateOfferLetterTemplate, getPlaceholders, dashboardWelcomeCard, updateDashboardWelcomeCard.
+
+## API Controllers
+
+### `CandidateApiController`
+
+HTTP controller - actions: index, store, show, update, destroy.
+
+### `DashboardApiController`
+
+HTTP controller - actions: index.
+
+### `InterviewApiController`
+
+HTTP controller - actions: index, store, show, update, destroy.
+
+### `JobPostingApiController`
+
+HTTP controller - actions: index, store, show, update, destroy.
 
 ## Events
 

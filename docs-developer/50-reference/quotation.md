@@ -9,7 +9,7 @@ Sales quotation module for the Zerp ERP platform
 
 **Module version:** 5
 
-**Classes documented:** 20
+**Classes documented:** 22
 
 ## Models
 
@@ -30,6 +30,16 @@ Eloquent model - 5 fillable fields, relations: item.
 ### `QuotationController`
 
 HTTP controller - actions: index, create, store, show, edit, update, destroy, sent, approve, reject, print, createRevision, duplicate, convertToInvoice, getWarehouseProducts.
+
+## API Controllers
+
+### `DashboardApiController`
+
+HTTP controller - actions: index.
+
+### `QuotationApiController`
+
+HTTP controller - actions: index, store, show, update, destroy, sent, approve, reject.
 
 ## Events
 

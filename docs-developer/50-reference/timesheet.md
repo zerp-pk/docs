@@ -9,7 +9,7 @@ Employee timesheet tracking module for the Zerp ERP platform
 
 **Module version:** 5
 
-**Classes documented:** 15
+**Classes documented:** 17
 
 ## Models
 
@@ -26,6 +26,16 @@ Eloquent model - 0 fillable fields.
 ### `TimesheetController`
 
 HTTP controller - actions: index, store, update, destroy, getAttendanceHours, fetchAttendanceHours, getRemainingHours.
+
+## API Controllers
+
+### `DashboardApiController`
+
+HTTP controller - actions: index.
+
+### `TimesheetApiController`
+
+HTTP controller - actions: index, store, show, update, destroy.
 
 ## Events
 

@@ -9,7 +9,7 @@ Accounting module for the Zerp ERP platform
 
 **Module version:** 5
 
-**Classes documented:** 146
+**Classes documented:** 151
 
 ## Models
 
@@ -190,6 +190,28 @@ HTTP controller - actions: index, store, update, destroy.
 ### `VendorPaymentController`
 
 HTTP controller - actions: index, store, getOutstandingInvoices, updateStatus, destroy.
+
+## API Controllers
+
+### `ChartOfAccountApiController`
+
+HTTP controller - actions: index, store, show, update, destroy.
+
+### `CustomerPaymentApiController`
+
+HTTP controller - actions: index, show, destroy.
+
+### `DashboardApiController`
+
+HTTP controller - actions: index.
+
+### `JournalEntryApiController`
+
+HTTP controller - actions: index, show.
+
+### `VendorPaymentApiController`
+
+HTTP controller - actions: index, show, destroy.
 
 ## Events
 

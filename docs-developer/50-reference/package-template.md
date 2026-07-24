@@ -5,11 +5,11 @@ sidebar_position: 15
 
 # `zerp/example-package`
 
-Description for example-package package
+Starter template for a Zerp module: copy it, rename ExamplePackage, and build.
 
 **Module version:** 1
 
-**Classes documented:** 11
+**Classes documented:** 12
 
 ## Models
 
@@ -26,6 +26,12 @@ HTTP controller - actions: index.
 ### `ExamplePackageItemController`
 
 HTTP controller - actions: index, store, update, destroy.
+
+## API Controllers
+
+### `ExamplePackageItemApiController`
+
+HTTP controller - actions: index.
 
 ## Requests
 

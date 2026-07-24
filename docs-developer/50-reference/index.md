@@ -9,7 +9,7 @@ Auto-generated class reference for all `zerp/*` packages. Regenerate with `npm r
 
 | Package | Description | Classes |
 |---|---|---|
-| [zerp/account](./account) | Accounting module for the Zerp ERP platform | 146 |
+| [zerp/account](./account) | Accounting module for the Zerp ERP platform | 151 |
 | [zerp/aiassistant](./aiassistant) | AI-powered assistant module for the Zerp ERP platform | 9 |
 | [zerp/budget-planner](./budget-planner) | Budget planning module for the Zerp ERP platform | 39 |
 | [zerp/calendar](./calendar) | Calendar and scheduling module for the Zerp ERP platform | 32 |
@@ -23,21 +23,21 @@ Auto-generated class reference for all `zerp/*` packages. Regenerate with `npm r
 | [zerp/jitsi](./jitsi) | Jitsi Meet integration module for the Zerp ERP platform | 15 |
 | [zerp/landing-page](./landing-page) | Landing page, CMS, and marketplace module for the Zerp ERP platform | 19 |
 | [zerp/lead](./lead) | CRM and lead management module for the Zerp ERP platform | 162 |
-| [zerp/example-package](./package-template) | Description for example-package package | 11 |
+| [zerp/example-package](./package-template) | Starter template for a Zerp module: copy it, rename ExamplePackage, and build. | 12 |
 | [zerp/paypal](./paypal) | PayPal payment gateway integration module for the Zerp ERP platform | 12 |
 | [zerp/performance](./performance) | Employee performance review module for the Zerp ERP platform | 69 |
 | [zerp/pos](./pos) | Point of Sale module for the Zerp ERP platform | 14 |
 | [zerp/product-service](./product-service) | Product and service catalog module for the Zerp ERP platform | 37 |
-| [zerp/quotation](./quotation) | Sales quotation module for the Zerp ERP platform | 20 |
-| [zerp/real-estate](./real-estate) | Real Estate Brokerage module for Zerp - property/listing management and viewings | 22 |
-| [zerp/recruitment](./recruitment) | Recruitment and hiring module for the Zerp ERP platform | 149 |
-| [zerp/restaurant](./restaurant) | Restaurant management module for Zerp - menu, orders and kitchen | 51 |
+| [zerp/quotation](./quotation) | Sales quotation module for the Zerp ERP platform | 22 |
+| [zerp/real-estate](./real-estate) | Real Estate Brokerage module for Zerp - property/listing management and viewings | 25 |
+| [zerp/recruitment](./recruitment) | Recruitment and hiring module for the Zerp ERP platform | 153 |
+| [zerp/restaurant](./restaurant) | Restaurant management module for Zerp - menu, orders and kitchen | 56 |
 | [zerp/slack](./slack) | Slack notification integration module for the Zerp ERP platform | 92 |
 | [zerp/stripe](./stripe) | Stripe payment gateway integration module for the Zerp ERP platform | 12 |
 | [zerp/support-ticket](./support-ticket) | Support ticket and helpdesk module for the Zerp ERP platform | 104 |
 | [zerp/taskly](./taskly) | Project management module for the Zerp ERP platform | 72 |
 | [zerp/telegram](./telegram) | Telegram notification integration module for the Zerp ERP platform | 90 |
-| [zerp/timesheet](./timesheet) | Employee timesheet tracking module for the Zerp ERP platform | 15 |
+| [zerp/timesheet](./timesheet) | Employee timesheet tracking module for the Zerp ERP platform | 17 |
 | [zerp/training](./training) | Employee training management module for the Zerp ERP platform | 42 |
 | [zerp/twilio](./twilio) | Twilio SMS integration module for the Zerp ERP platform | 88 |
 | [zerp/webhook](./webhook) | Webhook management module for the Zerp ERP platform | 10 |
