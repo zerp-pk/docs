@@ -19,10 +19,17 @@ Swagger UI in a browser:
 | `/docs/hrm` | HRM module only |
 | `/docs/support-ticket` | Support Ticket module only |
 | `/docs/taskly` | Project (Taskly) module only |
+| `/docs/timesheet` | Timesheet module only |
+| `/docs/quotation` | Quotation module only |
+| `/docs/account` | Accounting module only (routes under `api/accounting`) |
+| `/docs/restaurant` | Restaurant module only |
+| `/docs/real-estate` | Real Estate module only |
+| `/docs/recruitment` | Recruitment module only |
 
 The combined `/docs/api` page is the one to use for a full picture. The
 per-module pages exist only for the modules that ship an API today (HRM,
-Support Ticket, Taskly) and are handy when you are working inside a single
+Support Ticket, Taskly, Timesheet, Quotation, Accounting, Restaurant, Real
+Estate, and Recruitment) and are handy when you are working inside a single
 package. More appear as other modules gain API routes.
 
 ## Using the spec

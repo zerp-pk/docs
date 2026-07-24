@@ -9,7 +9,7 @@ Restaurant management module for Zerp - menu, orders and kitchen
 
 **Module version:** 1
 
-**Classes documented:** 51
+**Classes documented:** 56
 
 ## Models
 
@@ -110,6 +110,28 @@ HTTP controller - actions: index, store, update, destroy, seat, cancel, noShow.
 ### `RestaurantTableController`
 
 HTTP controller - actions: store, update, destroy, setStatus, assignWaiter, position, merge, split.
+
+## API Controllers
+
+### `DashboardApiController`
+
+HTTP controller - actions: index.
+
+### `KitchenTicketApiController`
+
+HTTP controller - actions: index, updateStatus.
+
+### `MenuItemApiController`
+
+HTTP controller - actions: index, store, show, update, destroy.
+
+### `OrderApiController`
+
+HTTP controller - actions: index, store, show, update, destroy.
+
+### `RestaurantTableApiController`
+
+HTTP controller - actions: index, store, show, update, destroy.
 
 ## Requests
 

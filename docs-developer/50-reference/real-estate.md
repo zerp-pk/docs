@@ -9,7 +9,7 @@ Real Estate Brokerage module for Zerp - property/listing management and viewings
 
 **Module version:** 1
 
-**Classes documented:** 22
+**Classes documented:** 25
 
 ## Models
 
@@ -54,6 +54,20 @@ HTTP controller - actions: index, store, update, destroy.
 ### `PropertyViewingController`
 
 HTTP controller - actions: index, store, update, destroy.
+
+## API Controllers
+
+### `DashboardApiController`
+
+HTTP controller - actions: index.
+
+### `PropertyApiController`
+
+HTTP controller - actions: index, store, show, update, destroy.
+
+### `PropertyViewingApiController`
+
+HTTP controller - actions: index, store, show, update, destroy.
 
 ## Requests
 
